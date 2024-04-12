@@ -271,6 +271,7 @@
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
+      "preMenu": "Pre Menu",
       "cart_count": {
         "one": "{{ count }} item",
         "other": "{{ count }} items"
