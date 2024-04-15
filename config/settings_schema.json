@@ -87,6 +87,12 @@
             "id": "menu_border",
             "label": "t:settings_schema.colors.settings.menu_border.label",
             "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "alt_text",
+            "label": "t:settings_schema.colors.settings.alt_text.label",
+            "default": "#121212"
           }
         ],
         "role": {

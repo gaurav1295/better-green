@@ -206,6 +206,15 @@
   margin-bottom: 0;
 }
 
+.card__heading .show__now {
+  font-size: calc(var(--font-heading-scale) * 1.3rem);
+  font-weight: 500;
+  color: rgba(var(--color-alt-text), 1);
+  letter-spacing: .142857em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
 .card--horizontal .card__heading,
 .card--horizontal .price__container .price-item,
 .card--horizontal__quick-add {

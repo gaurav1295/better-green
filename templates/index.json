@@ -27,8 +27,9 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/BetterGreens_HeroImage4.png",
         "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -39,37 +40,70 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "collection_list_8p6C7W": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_MPD46C": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bakery"
+          }
+        },
+        "featured_collection_xwhN9K": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boxes"
+          }
+        },
+        "featured_collection_qnFpyW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "drinks"
+          }
+        },
+        "featured_collection_8kjt4D": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fruits"
+          }
+        },
+        "featured_collection_NamCBz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vegetables"
+          }
+        },
+        "featured_collection_9meCGc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boxes"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_MPD46C",
+        "featured_collection_xwhN9K",
+        "featured_collection_qnFpyW",
+        "featured_collection_8kjt4D",
+        "featured_collection_NamCBz",
+        "featured_collection_9meCGc"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
+        "title": "From farm to you in a New York minute.",
+        "heading_size": "h1",
         "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "swipe_on_mobile": true,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "collection_list_8p6C7W"
   ]
 }

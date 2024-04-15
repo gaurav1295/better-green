@@ -138,6 +138,9 @@
         },
         "menu_border": {
           "label": "Menu border"
+        },
+        "alt_text": {
+          "label": "Alt Text"
         }
       }
     },
