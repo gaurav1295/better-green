@@ -1,13 +1,13 @@
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/Screenshot_2022-11-24_at_5.30.48_PM.png",
-    "logo_width": 110,
+    "logo_width": 100,
     "favicon": "shopify:\/\/shop_images\/Screenshot_2022-11-24_at_5.30.48_PM.png",
     "type_header_font": "rubik_n4",
     "heading_scale": 100,
     "type_body_font": "rubik_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1400,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
@@ -145,7 +145,8 @@
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "menu_border": "#d3d3d3"
         }
       },
       "scheme-2": {
@@ -156,7 +157,8 @@
           "button": "#121212",
           "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "menu_border": "#121212"
         }
       },
       "scheme-3": {
@@ -167,7 +169,8 @@
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "menu_border": "#121212"
         }
       },
       "scheme-4": {
@@ -178,7 +181,8 @@
           "button": "#ffffff",
           "button_label": "#1e352b",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "menu_border": "#121212"
         }
       },
       "scheme-5": {
@@ -189,7 +193,8 @@
           "button": "#ffffff",
           "button_label": "#b8e0d6",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "menu_border": "#121212"
         }
       }
     }
@@ -260,7 +265,7 @@
       "heading_scale": 100,
       "type_body_font": "assistant_n4",
       "body_scale": 100,
-      "page_width": 1200,
+      "page_width": 1400,
       "spacing_sections": 0,
       "spacing_grid_horizontal": 8,
       "spacing_grid_vertical": 8,

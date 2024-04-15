@@ -8,6 +8,9 @@
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
+      {% if forloop.last == true %}
+        <hr class="header-br"/>
+      {% endif %}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
@@ -98,6 +101,9 @@
           </a>
         {%- endif -%}
       </li>
+      {%- if forloop.first == true -%}
+        <hr class="header-br"/>
+      {%- endif-%}  
     {%- endfor -%}
   </ul>
 </nav>

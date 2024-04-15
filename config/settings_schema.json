@@ -81,6 +81,12 @@
             "id": "shadow",
             "label": "t:settings_schema.colors.settings.shadow.label",
             "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "menu_border",
+            "label": "t:settings_schema.colors.settings.menu_border.label",
+            "default": "#121212"
           }
         ],
         "role": {
