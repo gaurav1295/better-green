@@ -95,8 +95,214 @@
         "columns_desktop": 3,
         "color_scheme": "",
         "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_pCq8yn": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ahJrTr": {
+          "type": "heading",
+          "settings": {
+            "heading": "How it  works",
+            "heading_size": "h1"
+          }
+        },
+        "text_Bx3QPf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1.<\/strong> Shop on your schedule. Subscribe to your favorite staples or place an à la carte order.<\/p><p><\/p><p><strong>2. <\/strong>Our farmers harvest your food. By ordering only what we need, we keep our waste under 1%!<\/p><p><\/p><p><strong>3. <\/strong>On the day of your delivery, we pack up your box and bring it to your door.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_yVdhYm": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN MORE",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ahJrTr",
+        "text_Bx3QPf",
+        "button_yVdhYm"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/84f30a7e86a8167b1a23f874b44134fb2883c239-1705x1137.webp",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_fF8Vx4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NL4H3z": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3d73f1c5b622b0a8d2c08f09175057f4ed47521e-1000x1000.gif",
+            "title": "Grown Today, Delivered Tomorrow",
+            "text": "<p>We are the fastest solution from farm to table. Our rotating selection of seasonal p is chock-full of precious nutrients that won’t be depleted by weeks of travel and storage.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_YH8mat": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9cbec0b45904b3f818fa49378dfaa12d35e804ca-800x800.gif",
+            "title": "Not Your Average Grocery Delivery",
+            "text": "<p>Shop our full range (800+) of sustainable groceries sourced with care and expertise. Cutting out the middleman gives you a better value while the farmers and makers earn more, too.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_EUkdzU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/949e8c65317892ba203e791db5f56a79295dd8f1-4329x4329.webp",
+            "title": "Your Favorites on Autopilot",
+            "text": "<p>Enjoy set-and-forget convenience. Subscribe to seasonal farm boxes and weekly grocery staples on your schedule.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NL4H3z",
+        "column_YH8mat",
+        "column_EUkdzU"
+      ],
+      "settings": {
+        "title": "What Sets Us Apart",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-5",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "image_with_text_A7pRkc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xGyJKW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Name is Our Mission",
+            "heading_size": "h1"
+          }
+        },
+        "text_qfWRYc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Farm to People is on a mission to radically transform the food system and the way people get food to their table. We believe everyone should have access to the freshest, high-quality produce, seafood, meats, and more direct from growers and producers they can trust — because they know them. We’re working to make that easy and affordable.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_GL96QL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xGyJKW",
+        "text_qfWRYc",
+        "button_GL96QL"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/84f30a7e86a8167b1a23f874b44134fb2883c239-1705x1137.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_4aAqgE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Cdmb9H": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/78785eb7cb1586be5ccc4a334c6b95136078bfae-800x800.webp",
+            "title": "@grossypelosi",
+            "text": "<p>“I deeply look forward to Monday mornings when I choose - yes, choose - what goes in my box over coffee and my last slice of She Wolf sourdough. The seasonal produce selection changes every week and keeps me on my toes, but it’s those constant pantry staples that keep me coming back.”<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iayB9R": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9f06cb0b5efe967515e9f1962f0fee8b7496daeb-323x323.webp",
+            "title": "@thevicstyles",
+            "text": "<p>\"I’ve been using Farm to People for over 2 years now. I love the fact that the produce is sourced locally, which reduces travel time, waste, and emissions. It’s also a great way to support local farms & farmers.\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tBPgCQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/84f30a7e86a8167b1a23f874b44134fb2883c239-1705x1137_da40f2f2-b192-404a-9c42-02f154939bd0.webp",
+            "title": "@theotherroute",
+            "text": "<p>\"Every Monday when my Farm to People box arrives, I get so excited to see what I'll be experimenting with for the upcoming week! They curate the ingredients just enough so you get some solid direction, while leaving plenty of room for creativity in the kitchen.\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Cdmb9H",
+        "column_iayB9R",
+        "column_tBPgCQ"
+      ],
+      "settings": {
+        "title": "From the people",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -104,6 +310,10 @@
   },
   "order": [
     "image_banner",
-    "collection_list_8p6C7W"
+    "collection_list_8p6C7W",
+    "image_with_text_pCq8yn",
+    "multicolumn_fF8Vx4",
+    "image_with_text_A7pRkc",
+    "multicolumn_4aAqgE"
   ]
 }
