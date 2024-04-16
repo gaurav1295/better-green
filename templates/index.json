@@ -145,7 +145,9 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 80,
+        "wave_border_enabled": false,
+        "wave_border_fill": "#ffffff"
       }
     },
     "multicolumn_fF8Vx4": {
@@ -248,7 +250,9 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 80,
+        "wave_border_enabled": false,
+        "wave_border_fill": "#b8e0d6"
       }
     },
     "multicolumn_4aAqgE": {

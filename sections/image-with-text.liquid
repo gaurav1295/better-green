@@ -26,9 +26,12 @@
 
 <div>
   {%- if section.settings.wave_border_enabled -%}
-  <div class="wave-border--{{ section.settings.wave_border_enabled }} wave-border--{{ section.settings.wave_border_background }} wave-border--{{ section.settings.wave_border_fill }}">
-    {% render 'wave' %}
-  </div>
+    <div class="gradient color-{{ section.settings.section_color_scheme }} wave-border">
+      {% render 'wave' ,
+        fill: section.settings.wave_border_fill
+      %}
+    </div>
+  {%- endif -%}
   <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
     <div class="page-width">
       <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -331,9 +334,15 @@
     {
       "type": "checkbox",
       "id": "wave_border_enabled",
-      "label": "t:sections.all.padding.padding_bottom",
+      "label": "t:sections.all.wave_border.enabled",
       "default": false
     },
+    {
+      "type": "color",
+      "id": "wave_border_fill",
+      "label": "t:sections.all.wave_border.color",
+      "default": "#FFFFFF"
+    }
   ],
   "blocks": [
     {

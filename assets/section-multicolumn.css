@@ -225,3 +225,9 @@
     display: list-item;
   }
 }
+
+/* Gaurav Edit */
+
+.multicolumn [class^='title']{
+  text-align: center;
+}

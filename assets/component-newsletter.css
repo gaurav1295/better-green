@@ -17,6 +17,7 @@
 
 .newsletter-form__field-wrapper {
   width: 100%;
+  min-width: 340px;
 }
 
 .newsletter-form__field-wrapper .field__input {

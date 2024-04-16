@@ -396,6 +396,10 @@
           "label": "Image behavior"
         }
       },
+      "wave_border": {
+        "enabled": "Show wave border",
+        "color": "Border color"
+      },
       "padding": {
         "section_padding_heading": "Section padding",
         "padding_top": "Top padding",

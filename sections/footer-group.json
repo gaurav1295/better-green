@@ -4,16 +4,43 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "brand_information_pH847m": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "link_list_JHMjE3": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        },
+        "link_list_bgX4PV": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer-2"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_pH847m",
+        "link_list_JHMjE3",
+        "link_list_bgX4PV"
+      ],
       "settings": {
         "color_scheme": "scheme-3",
-        "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
+        "newsletter_enable": true,
+        "newsletter_heading": "Farm to your inbox",
+        "enable_follow_on_shop": false,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
-        "show_policy": true,
+        "show_policy": false,
         "margin_top": 0,
         "padding_top": 80,
         "padding_bottom": 80
