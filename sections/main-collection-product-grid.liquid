@@ -91,6 +91,7 @@
     {%- endif -%}
 
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
+      {{ 'collection-nav-sidebar.css' | asset_url | stylesheet_tag }}
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
@@ -100,6 +101,31 @@
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
+          
+          {% comment %} <div class="vertical-menu">
+            {% for link in linklists.main-menu.links %}
+              {%- if link.url contains request.path -%}
+                <ul>
+                  <li>
+                    <a href="{{ link.url }}">{{ link.title }} </a>
+                    {% comment %} {{ link.links  }} {% endcomment %}
+                    {% if link.links != blank %}
+                      {% for child in link.links %}
+                        <h1>{{ child.title }}</h1>
+                        {% comment %} <li><a href="{{ child.url }}">{{ child.title }}</a></li> {% endcomment %}
+                      {% endfor %}
+                      {% comment %} <h1></h1> {% endcomment %}
+                      {% comment %} <ul class="submenu">
+                        {% for child in link.links %}
+                          <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+                        {% endfor %}
+                      </ul> {% endcomment %}
+                    {%-endif-%}
+                  </li>
+                </ul>
+              {%- endif-%}
+            {%- endfor -%} 
+          </div> {% endcomment %}
           {% render 'facets',
             results: collection,
             enable_filtering: section.settings.enable_filtering,
