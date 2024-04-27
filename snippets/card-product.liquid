@@ -23,6 +23,60 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
+{% comment %} {%- unless show_quick_add == false -%}
+  
+{%- endunless -%} {% endcomment %}
+
+{{ 'card-product.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'card-product.js' | asset_url }}" defer="defer"></script>
+
+<style>
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #07261e73;
+    /* display: none; Initially hidden */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .overlay-content {
+    /* background-color: #fff; */
+    padding: 20px;
+    /* border-radius: 5px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+
+  .cart-item-count {
+    color: white;
+    display: block;
+    font-size: 30px;
+  }
+
+  .gc-button {
+    border-radius: 90px;
+    transition-duration: 0.35s;
+    transition-property: width, border-radius;
+    width: 90px;
+    background-color: #f3a208;
+    border: none;
+    height: 42px;
+    transition: background-color 0.2s;
+    color: white;
+  }
+
+  .gc-icon {
+    width: 1.5rem;
+  }
+</style>
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -101,42 +155,154 @@
             </div>
           </div>
         {%- endif -%}
-        {% comment %} <div class="card__content">
-          <div class="card__information">
-            <h3
-              class="card__heading"
-              {% if card_product.featured_media == null and settings.card_style == 'standard' %}
-                id="title-{{ section_id }}-{{ card_product.id }}"
-              {% endif %}
-            >
-              <a
-                href="{{ card_product.url }}"
-                id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
-                class="full-unstyled-link"
-                aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-              >
-                {{ card_product.title | escape }}
-              </a>
-            </h3>
+        {%- if show_quick_add == false -%}
+          {%- liquid
+            assign product_id_to_check = card_product.id
+            assign total_items = 0
+
+            for item in cart.items
+              if item.product_id == product_id_to_check
+                assign total_items = total_items | plus: item.quantity
+              endif
+            endfor
+          -%}
+
+          {%- if total_items > 0 -%}
+            <div id="cartOverlay" class="overlay">
+              <div class="overlay-content">
+                <span id="cartItemCount" class="cart-item-count">{{ total_items }}</span> in your order
+              </div>
+            </div>
+          {%- endif -%}
+          <div
+            style="
+              position: absolute;
+              bottom: 0;
+              margin-bottom: 10px;
+              /* display: block; */
+              width: 100%;
+              z-index: 2;
+            "
+          >
+            {%- liquid
+              assign item = card_product
+              assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
+              assign qty_rules = false
+              if card_product.selected_or_first_available_variant.quantity_rule.min > 1 or card_product.selected_or_first_available_variant.quantity_rule.max != null or card_product.selected_or_first_available_variant.quantity_rule.increment > 1
+                assign qty_rules = true
+              endif
+            -%}
+
+            <card-product-add-to-cart>
+              <form action="{{ routes.cart_url }}" class="gc-card-product-form" method="post" id="cart">
+                <div class="gc-card-product-add-tocart" id="gc-card-product-add-tocart" data-id="{{ section.id }}">
+                  <quantity-input-custom>
+                    <button class="gc-card-product-add" name="plus" type="button">Add</button>
+                    <div class="gc-card-product-loading"></div>
+                    {{ item.dataset }}
+                    <input
+                      {% comment %} type="hidden" {% endcomment %}
+                      class="quantity__input"
+                      data-quantity-variant-id="{{ item.variant.id }}"
+                      type="number"
+                      name="updates[]"
+                      value="{{ item.quantity }}"
+                      {% # theme-check-disable %}
+                      data-cart-quantity="{{ cart | item_count_for_variant: item.variant.id }}"
+                      min="{{ item.variant.quantity_rule.min }}"
+                      {% if item.variant.quantity_rule.max != null %}
+                        max="{{ item.variant.quantity_rule.max }}"
+                      {% endif %}
+                      step="{{ item.variant.quantity_rule.increment }}"
+                      {% # theme-check-enable %}
+                      aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                      id="Quantity-{{ item.index | plus: 1 }}"
+                      data-index="{{ item.index | plus: 1 }}"
+                    >
+                  </quantity-input-custom>
+                </div>
+              </form>
+            </card-product-add-to-cart>
+            {% comment %}
+              <product-form-inline data-section-id="{{ section.id }}">
+                {%- form 'product',
+                  card_product,
+                  id: product_form_id,
+                  class: 'form',
+                  novalidate: 'novalidate',
+                  data-type: 'add-to-cart-form'
+                -%}
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="{{ card_product.selected_or_first_available_variant.id }}"
+                    class="product-variant-id"
+                    {% if card_product.selected_or_first_available_variant.available == false %}
+                      disabled
+                    {% endif %}
+                  >
+                  <div style="display: flex;display: flex;
+                  flex-direction: row-reverse;
+                  padding: 10px;">
+                    {% comment %} <button
+                      id="{{ product_form_id }}-submit"
+                      type="submit"
+                      name="remove"
+                      class="gc-button"
+                      aria-haspopup="dialog"
+                      aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                      aria-live="polite"
+                      data-sold-out-message="true"
+                      {% if card_product.selected_or_first_available_variant.available == false %}
+                        disabled
+                      {% endif %}
+                    >
+                      <span>
+                        {%- if card_product.selected_or_first_available_variant.available -%}
+                          {% comment %} {{ 'products.product.add_to_cart' | t }} {% endcomment %}
+                          {% render 'icon-minus' %}
+                        {%- else -%}
+                          {{ 'products.product.sold_out' | t }}
+                        {%- endif -%}
+                      </span>
+                      <span class="sold-out-message hidden">
+                        {{ 'products.product.sold_out' | t }}
+                      </span>
+                      {%- render 'loading-spinner' -%}
+                    </button> {% endcomment %}
+                    <button
+                      id="{{ product_form_id }}-submit"
+                      type="submit"
+                      name="add"
+                      class="gc-button"
+                      aria-haspopup="dialog"
+                      aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                      aria-live="polite"
+                      data-sold-out-message="true"
+                      {% if card_product.selected_or_first_available_variant.available == false %}
+                        disabled
+                      {% endif %}
+                    >
+                      <span>
+                        {%- if card_product.selected_or_first_available_variant.available -%}
+                          {% comment %} {{ 'products.product.add_to_cart' | t }} {% endcomment %}
+                          {% render 'icon-plus' %}
+                        {%- else -%}
+                          {{ 'products.product.sold_out' | t }}
+                        {%- endif -%}
+                      </span>
+                      <span class="sold-out-message hidden">
+                        {{ 'products.product.sold_out' | t }}
+                      </span>
+                      {%- render 'loading-spinner' -%}
+                    </button>
+                  </div>
+                {%- endform -%}
+              </product-form-inline>
+            {% endcomment %}
+            {% comment %} {%- endif -%} {% endcomment %}
           </div>
-          <div class="card__badge {{ settings.badge_position }}">
-            {%- if card_product.available == false -%}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
-              >
-                {{- 'products.product.sold_out' | t -}}
-              </span>
-            {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
-              >
-                {{- 'products.product.on_sale' | t -}}
-              </span>
-            {%- endif -%}
-          </div>
-        </div> {% endcomment %}
+        {%- endif -%}
       </div>
       <div class="card__content">
         <div class="card__information">
