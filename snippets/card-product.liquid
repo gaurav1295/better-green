@@ -191,17 +191,24 @@
               if card_product.selected_or_first_available_variant.quantity_rule.min > 1 or card_product.selected_or_first_available_variant.quantity_rule.max != null or card_product.selected_or_first_available_variant.quantity_rule.increment > 1
                 assign qty_rules = true
               endif
+
+              for item in cart.items
+                if item.product_id == product_id_to_check
+                  assign item = item
+                endif
+              endfor
             -%}
 
             <card-product-add-to-cart>
+              {% comment %} {{ item | json }} {% endcomment %}
               <form action="{{ routes.cart_url }}" class="gc-card-product-form" method="post" id="cart">
                 <div class="gc-card-product-add-tocart" id="gc-card-product-add-tocart" data-id="{{ section.id }}">
                   <quantity-input-custom>
                     <button class="gc-card-product-add" name="plus" type="button">Add</button>
                     <div class="gc-card-product-loading"></div>
-                    {{ item.dataset }}
+                    {% comment %} {{ item.dataset }} {% endcomment %}
                     <input
-                      {% comment %} type="hidden" {% endcomment %}
+                      type="hidden"
                       class="quantity__input"
                       data-quantity-variant-id="{{ item.variant.id }}"
                       type="number"

@@ -27,6 +27,7 @@ class CardProductAddToCart extends HTMLElement {
     }
   
     onChange(event) {
+       console.log(document.getElementById('main-cart-items'))
       this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'), event.target.dataset.quantityVariantId);
     }
   
@@ -137,7 +138,7 @@ class CardProductAddToCart extends HTMLElement {
               message = window.cartStrings.quantityError.replace('[quantity]', updatedValue);
             }
           }
-          this.updateLiveRegions(line, message);
+          this.updwateLiveRegions(line, message);
   
           const lineItem =
             document.getElementById(`CartItem-${line}`) || document.getElementById(`CartDrawer-Item-${line}`);
