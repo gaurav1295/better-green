@@ -2,13 +2,361 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_9E3mzc": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_bbbHRp": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "Our Story",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "text_cBKDYY": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><em>Our Story<\/em><\/h2>"
+          }
+        },
+        "heading_pQAUzC": {
+          "type": "heading",
+          "settings": {
+            "heading": "IT STARTED WITH A PEACH",
+            "heading_size": "hxxl"
+          }
+        },
+        "caption_mAGk7w": {
+          "type": "caption",
+          "settings": {
+            "caption": "How a mission to find flavor grew into a food system revolution.",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "button_gTfVPf": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_bbbHRp",
+        "text_cBKDYY",
+        "heading_pQAUzC",
+        "caption_mAGk7w",
+        "button_gTfVPf"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "show_side_margin": false,
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "image_banner_9HRjtG": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1f2c508b981b1189a82057c2ba91f3b95f252238-692x521.jpg",
+        "show_side_margin": true,
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_cYKz36": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Fy8k9j": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "New York City in the weeks leading up to Christmas, 1999. The story goes that Franco Fubini — Natoora’s founder — visited Citarella. It was the second Citarella on 1313 3rd Ave in the Upper East Side, which was just around the block from where he lived. The family-run grocery store was already known for its fish, but it had a fresh produce section right at the entrance. This is where Franco overheard a woman asking for peaches. Peaches in December.",
+            "heading_size": "h2"
+          }
+        },
+        "text_Ppxf8P": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>New York City in the weeks leading up to Christmas, 1999. The story goes that Franco Fubini — Natoora’s founder — visited Citarella. It was the second Citarella on 1313 3rd Ave in the Upper East Side, which was just around the block from where he lived. The family-run grocery store was already known for its fish, but it had a fresh produce section right at the entrance. This is where Franco overheard a woman asking for peaches. Peaches in December.<\/p>"
+          }
+        },
+        "button_GyW3ri": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "caption_XBVfBk": {
+          "type": "caption",
+          "settings": {
+            "caption": "New York City in the weeks leading up to Christmas, 1999. The story goes that Franco Fubini — Natoora’s founder — visited Citarella. It was the second Citarella on 1313 3rd Ave in the Upper East Side, which was just around the block from where he lived. The family-run grocery store was already known for its fish, but it had a fresh produce section right at the entrance. This is where Franco overheard a woman asking for peaches. Peaches in December.",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fy8k9j",
+        "text_Ppxf8P",
+        "button_GyW3ri",
+        "caption_XBVfBk"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "show_side_margin": true,
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "multirow_BPapMm": {
+      "type": "multirow",
+      "blocks": {
+        "row_HU78Dm": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cd35e63c18ee0daca899fa76ef623f7111f61771-1080x1350.webp",
+            "caption": "",
+            "heading": "",
+            "text": "<p>Franco clearly recollects this moment — a single snapshot of his frustrations with New York’s food scene at the time. Cooking for friends, Franco spent his free time searching farmers markets for produce as exceptional as the foods he remembers eating growing up. Everything came up short.<\/p><p>Born in Argentina to a German-Jewish mother and Italian father, Franco spent his childhood immersed in varied and vibrant food cultures. His step-father’s work took the family to Italy, Egypt and the Netherlands in the 1970s and 80s.<\/p><p>At the time, in these countries, the industrialization of the food system hadn’t gone as far as it had in the UK and US. Franco remembers chutney in Egypt made from the fruits of wild mango trees. Summers passed in Positano, where lemon granitas and tomatoes from the vine were an almost daily ritual.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_kwLx7y": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/842e4cbb91bd45533b2711206b8702e8fef80899-1080x1350.webp",
+            "caption": "",
+            "heading": "",
+            "text": "<p>Living in NYC as an adult, Franco started cooking, working his way through Jacques Pépin’s <em>La Technique<\/em> to learn and relearn the classics. This meant spending a lot of time seeking out produce. Citarella, Union Square, Balducci’s and Grace’s Marketplace were his locals, but supermarket shelves revealed a distorted new reality.<\/p><p><\/p><p><\/p><p>Fruits and vegetables were available all year round. In pulling away from the seasons, we had made flavor almost impossible to find. We were asking for peaches in December.<\/p><p><\/p><p><\/p><p>London, 2004. Franco connected his entrepreneurship with food, joining forces with Solstice to launch their home delivery service. In November 2005, he moved over to Natoora — a French company specializing in sourcing fresh ingredients for home delivery — to launch their UK outpost. This was the very start of our food system revolution.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_HU78Dm",
+        "row_kwLx7y"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "show_side_margin": true,
+        "desktop_image_width": "medium",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3GyjB3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FJbCWR": {
+          "type": "heading",
+          "settings": {
+            "heading": "For close to 20 years, we’ve built our sourcing around a very simple, yet immensely powerful ethos: flavor first.",
+            "heading_size": "h0"
+          }
+        },
+        "caption_B3KC4r": {
+          "type": "caption",
+          "settings": {
+            "caption": "FRANCO FUBINI, NATOORA FOUNDER & CEO",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FJbCWR",
+        "caption_B3KC4r"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "show_side_margin": true,
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_cDmM9p": {
+      "type": "multirow",
+      "blocks": {
+        "row_9BCmz6": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/131ea3906999fb1314af1f27d8f0a24caa23fbf4-885x886.webp",
+            "caption": "",
+            "heading": "",
+            "text": "<p>Natoora came to life in local markets; vital windows into regional food systems and an opportunity to meet the people upholding them. It’s here — at the Milan, Barcelona, and Fondi markets — that Franco found culturally rich products that stay local, usually as a result of fragmented distribution systems and the unwillingness of wholesalers or specialists to invest in deep, local sourcing. They became our root systems, capable of reaching deep into regions and broadening their value.<\/p><p>It was the direct relationships forged at and through these markets that became springboards for radical change. At the Milan market, Franco tasted a White Peach with flesh almost entirely blushed with deep purple streaks. Two years of hunting around the Italian countryside to trace that peach back to its grower led him to Domenico, whose stone fruits have become an institution for us in Europe over the warmer months.<\/p><p>Small-scale growers like Domenico have become our lifeblood. Anyone can pursue new flavor peaks, but only exceptional growers with incredible instincts and fierce resolution can come close to achieving them.<\/p>",
+            "button_label": "Meet our growers",
+            "button_link": ""
+          }
+        },
+        "row_QJNtpn": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/f2e4243c69e03734c3fef392b8111300017e328d-1080x1080.webp",
+            "caption": "",
+            "heading": "",
+            "text": "<p>Today, we've taken the revolution beyond London to New York, Miami, Paris, Malmö, Copenhagen and Melbourne. Each city has its own, unique supply chain adapted to its locality. Preserving this granularity is vital to the integrity of our expansion. Far from an extensive, opaque export system, we have built local chains which thrive by way of their direct connections.<\/p><p>This growth is necessary if we are going to create a model for a food system strong enough to rival the dominant, yield-driven supply chains.<\/p>",
+            "button_label": "How we source",
+            "button_link": ""
+          }
+        },
+        "row_reeqqH": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/842e4cbb91bd45533b2711206b8702e8fef80899-1080x1350.webp",
+            "caption": "",
+            "heading": "",
+            "text": "<p>With a growing understanding of the impact of our food choices (and the value of making better ones), it was time to take the flavor-first produce to home cooks — the next step in shifting the habits that underpin our food system.<\/p><p>First, we looked at supermarket shelves, where intensively farmed, year-round produce dominated. By working with, not against them, we realized that we could have the biggest impact on the day-to-day spending habits of consumers.<\/p><p>In 2012, we started working with Ocado, then Waitrose, Selfridges, Wholefoods and Eataly in the UK and Monoprix in Paris. In 2013, we opened the first of our four West London stores.<\/p><p>Then, in March 2020<strong>, <\/strong>as the pandemic led to local lockdowns at a global scale and restaurants were forced to close, we continued to back our growers by pivoting to home deliveries in New York and London. In the first week, we delivered to over 500 New York homes.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_9BCmz6",
+        "row_QJNtpn",
+        "row_reeqqH"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "show_side_margin": true,
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_VzLpnf": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_3cmHmC": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>OUR STORY IS FAR FROM FINISHED.IN FACT, IT'S ONLY JUST GETTING STARTED.<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_nXL4PR": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Be part of it",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3cmHmC",
+        "buttons_nXL4PR"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/60e895d4c20488b5a3c08ce4dd46a3fc3a9965f8-2596x1730.webp",
+        "show_side_margin": true,
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_KybDPW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_X3EkVY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hear more from Franco in our podcast, Transform the Food System, as he talks to some of the people that inspire him the most.",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_X3EkVY"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "show_side_margin": true,
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_9E3mzc",
+    "image_banner_9HRjtG",
+    "rich_text_cYKz36",
+    "multirow_BPapMm",
+    "rich_text_3GyjB3",
+    "multirow_cDmM9p",
+    "image_banner_VzLpnf",
+    "rich_text_KybDPW"
   ]
 }

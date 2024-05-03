@@ -31,6 +31,16 @@
     padding-left: calc(4rem / var(--font-body-scale));
     padding-right: calc(4rem / var(--font-body-scale));
   }
+
+  .policies li {
+    display: block!important;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -73,6 +83,16 @@
     animation: none;
     opacity: 1;
     transform: inherit;
+  }
+
+  .footer-block__brand-info .footer__list-social.list-social {
+    justify-content: center !important;
+    margin-left: -1.3rem;
+    margin-right: -1.3rem;
+  }
+
+  .newsletter_gc_button {
+    margin-top: 30px;
   }
 }
 
@@ -139,6 +159,10 @@
 @media screen and (max-width: 749px) {
   .footer-block.footer-block--menu:only-child {
     text-align: left;
+  }
+
+  .footer-block.footer-block--menu {
+    display: none;
   }
 }
 
@@ -414,6 +438,11 @@
   .footer-block-image.center,
   .footer-block-image.right {
     justify-content: center;
+  }
+
+  .footer-block__image-wrapper {
+    margin: 2px auto;
+    overflow: hidden !important;
   }
 }
 

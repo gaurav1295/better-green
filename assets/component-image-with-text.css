@@ -14,6 +14,12 @@
   /* background: rgba(var(--color-background), 1); */
 }
 
+.multirow--side-margin-true {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
     flex-direction: row-reverse;
@@ -87,6 +93,20 @@
   left: 0;
   transform: translate(0);
 }
+
+.multirow--side-margin-true .image-with-text__content {
+  padding: 0px;
+}
+
+.multirow--side-margin-true .image-with-text__content > * + * {
+  margin-top: 0rem;
+}
+
+.multirow--side-margin-true .image-with-text__text p {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
 
 .image-with-text__content {
   align-items: flex-start;

@@ -423,6 +423,12 @@
         },
         "options__4": {
           "label": "Extra large"
+        },
+        "options__5": {
+          "label": "Extra large"
+        },
+        "options__6": {
+          "label": "Extra Extra large"
         }
       },
       "image_shape": {
@@ -1307,6 +1313,9 @@
         },
         "image_2": {
           "label": "Second image"
+        },
+        "show_side_margin" : {
+          "label": "Show side margin"
         },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
