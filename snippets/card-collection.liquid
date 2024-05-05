@@ -87,6 +87,8 @@
               <a
                 {% if card_collection == blank %}
                   role="link" aria-disabled="true"
+                {% elsif custom_url != blank %}
+                  href="{{ custom_url }}"
                 {% else %}
                   href="{{ card_collection.url }}"
                 {% endif %}
@@ -97,9 +99,11 @@
                 {%- else -%}
                   {{ 'onboarding.collection_title' | t }}
                 {%- endif -%}
-                {% comment %} {%- if card_collection.description == blank -%}
-                  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-                {%- endif %} {% endcomment %}
+                {% comment %}
+                  {%- if card_collection.description == blank -%}
+                    <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                  {%- endif %}
+                {% endcomment %}
               </a>
             </h3>
             {%- if card_collection.description != blank -%}
@@ -119,6 +123,8 @@
             <a
               {% if card_collection == blank %}
                 role="link" aria-disabled="true"
+              {% elsif custom_url != blank %}
+                href="{{ custom_url }}"
               {% else %}
                 href="{{ card_collection.url }}"
               {% endif %}
@@ -129,10 +135,21 @@
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
-              <p class="show__now">shop now</p>
-              {% comment %} {%- if card_collection.featured_image or card_collection.description == blank -%}
-                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-              {%- endif %} {% endcomment %}
+              {% if custom_url == blank %}
+                <p class="show__now">shop now</p>
+              {% else %}
+                {%- if card_collection.description != blank -%}
+                  <p class="card__caption">
+                    {{- card_collection.description | strip_html | truncatewords: 12 -}}
+                    <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                  </p>
+                {%- endif -%}
+              {% endif %}
+              {% comment %}
+                {%- if card_collection.featured_image or card_collection.description == blank -%}
+                  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                {%- endif %}
+              {% endcomment %}
             </a>
           </h3>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
