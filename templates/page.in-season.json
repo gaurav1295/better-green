@@ -1,0 +1,255 @@
+{
+    "sections": {
+      "main": {
+        "type": "main-page",
+        "disabled": true,
+        "settings": {
+          "padding_top": 28,
+          "padding_bottom": 28
+        }
+      },
+      "rich_text_9E3mzc": {
+        "type": "rich-text",
+        "blocks": {
+          "caption_bbbHRp": {
+            "type": "caption",
+            "disabled": true,
+            "settings": {
+              "caption": "Our Story",
+              "text_style": "subtitle",
+              "text_size": "large"
+            }
+          },
+          "text_cBKDYY": {
+            "type": "text",
+            "settings": {
+              "text": "<h2><em>Radical Seasonality<\/em><\/h2>"
+            }
+          },
+          "heading_pQAUzC": {
+            "type": "heading",
+            "settings": {
+              "heading": "GO BEYOND FOUR SEASONS",
+              "heading_size": "hxxl"
+            }
+          },
+          "caption_mAGk7w": {
+            "type": "caption",
+            "settings": {
+              "caption": "Each fruit and vegetable has its own season, with subtle shifts that happen every day. Follow their microseasons to unlock flavor at every stage.",
+              "text_style": "subtitle",
+              "text_size": "medium"
+            }
+          },
+          "button_gTfVPf": {
+            "type": "button",
+            "disabled": true,
+            "settings": {
+              "button_label": "Button label",
+              "button_link": "",
+              "button_style_secondary": false,
+              "button_label_2": "",
+              "button_link_2": "",
+              "button_style_secondary_2": false
+            }
+          }
+        },
+        "block_order": [
+          "caption_bbbHRp",
+          "text_cBKDYY",
+          "heading_pQAUzC",
+          "caption_mAGk7w",
+          "button_gTfVPf"
+        ],
+        "settings": {
+          "desktop_content_position": "center",
+          "content_alignment": "center",
+          "show_side_margin": false,
+          "color_scheme": "",
+          "full_width": false,
+          "padding_top": 100,
+          "padding_bottom": 100
+        }
+      },
+      "image_banner_9HRjtG": {
+        "type": "image-banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/f0a60e4f98908d14b66e1bfbeaddf018e0bef8a9-1620x1080.webp",
+          "show_side_margin": true,
+          "image_overlay_opacity": 0,
+          "image_height": "adapt",
+          "desktop_content_position": "middle-center",
+          "show_text_box": true,
+          "desktop_content_alignment": "center",
+          "color_scheme": "",
+          "image_behavior": "none",
+          "mobile_content_alignment": "center",
+          "stack_images_on_mobile": true,
+          "show_text_below": true
+        }
+      },
+      "rich_text_6jyxnA": {
+        "type": "rich-text",
+        "blocks": {
+          "heading_UMk9PN": {
+            "type": "heading",
+            "settings": {
+              "heading": "FEATURED THIS WEEK",
+              "heading_size": "h0"
+            }
+          }
+        },
+        "block_order": [
+          "heading_UMk9PN"
+        ],
+        "settings": {
+          "desktop_content_position": "left",
+          "content_alignment": "left",
+          "show_side_margin": true,
+          "color_scheme": "",
+          "full_width": true,
+          "padding_top": 40,
+          "padding_bottom": 40
+        }
+      },
+      "multirow_c8npwR": {
+        "type": "multirow",
+        "blocks": {
+          "row_ycM34G": {
+            "type": "row",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/131ea3906999fb1314af1f27d8f0a24caa23fbf4-885x886.webp",
+              "caption": "",
+              "heading": "EARLY",
+              "text": "<p>Baby Red Russian Kale<br\/><em>Grown by Simon and Madeleine in Chester, New York.<\/em><\/p><p>As temperatures warm up in Chester, Simon and Madeleine are seeing an abundance of Baby Red Russian kale. Right now, their Kale, Pea Shoots, and Bok Choy are all grown in tunnels and seeded in successions to provide a continuous supply for the coming months.<\/p><p>The rich soil of New York's Black Dirt Region, where Simon and Madelaine are located, is packed with organic matter and nutrients, providing the perfect medium resulting in greens with a bold flavor.<\/p><p>Beyond the naturally rich soil, they practice crop rotation and utilize cover crops to maintain soil health. On their plot of land, leased from the Chester Agricultural Center, they manage all their crops from seed to harvest.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "row_bjnVbi": {
+            "type": "row",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/131ea3906999fb1314af1f27d8f0a24caa23fbf4-885x886.webp",
+              "caption": "",
+              "heading": "PEAK",
+              "text": "<p><strong>Green Asparagus<\/strong><br\/><em>Grown by Roscoe, Deborah and Jim in California.<\/em><\/p><p>Green Asparagus is tasting excellent right now, with tender, fiberless stalks. There are shortages of Jumbo and Colossal Spears, but large Asparagus is in good supply. In California, fluctuating temperatures and heavy rain have challenged all growers, particularly those growing the larger spears. Jumbo and Colossal spears should be returning next week.<\/p><p>Right now, we are looking to Roscoe, as well as Jim and Deborah, to meet the demand for California spears. We will continue to source from both growers until we transition to local Asparagus later in May.<\/p><p>Here in the Northeast, local growers are beginning to see Asparagus popping up as temperatures continue to climb after a cold start to spring. This means that this year, we will move seamlessly to local Green and Purple Asparagus from Lani's as California spears end.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "row_aARbe3": {
+            "type": "row",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/131ea3906999fb1314af1f27d8f0a24caa23fbf4-885x886.webp",
+              "caption": "",
+              "heading": "LATE",
+              "text": "<p><strong>Nagami Kumquats<\/strong><br\/><em>Grown by Armando and Leticia in Fallbrook, California<\/em><\/p><p>We are nearing the end of the season for Armando and Letitia's Nagami Kumquats — they will be available for another week or so. This season, though challenging for them, saw several phenomenal kumquat varieties from Armando and Letitia, each with a distinct flavor profile. The Nagami Kumquats, usually tart and highest in acidity, have mellowed a bit with late-season sweetness, adding more balance to their flavor profile.<\/p><p>Since 1989, Leticia's family have committed to growing diverse varieties to preserve unique flavors and ecosystem biodiversity. From 10 acres of barren land, the Garcia family has nurtured 29 acres of diverse orchards over time. The third generation is committed to practices to help the land flourish for future stewards. For a unique approach to pest control, they use lacewings, carnivorous snails, and ladybugs. Chicken compost, bio flora, cover crops, and mulch are used to maintain and improve the soil.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "row_ycM34G",
+          "row_bjnVbi",
+          "row_aARbe3"
+        ],
+        "settings": {
+          "image_height": "adapt",
+          "show_side_margin": true,
+          "desktop_image_width": "medium",
+          "heading_size": "h1",
+          "text_style": "body",
+          "button_style": "secondary",
+          "desktop_content_position": "top",
+          "desktop_content_alignment": "left",
+          "image_layout": "alternate-right",
+          "section_color_scheme": "",
+          "row_color_scheme": "",
+          "mobile_content_alignment": "left",
+          "padding_top": 80,
+          "padding_bottom": 80
+        }
+      },
+      "rich_text_Yyz9nK": {
+        "type": "rich-text",
+        "blocks": {
+          "heading_rR9qDh": {
+            "type": "heading",
+            "settings": {
+              "heading": "GO DEEPER",
+              "heading_size": "h0"
+            }
+          }
+        },
+        "block_order": [
+          "heading_rR9qDh"
+        ],
+        "settings": {
+          "desktop_content_position": "left",
+          "content_alignment": "left",
+          "show_side_margin": true,
+          "color_scheme": "",
+          "full_width": true,
+          "padding_top": 40,
+          "padding_bottom": 40
+        }
+      },
+      "multirow_slider_jki6r4": {
+        "type": "multirow-slider",
+        "blocks": {
+          "row_FfXCyC": {
+            "type": "row",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/f52248c7daaf4839500547b4b1355c93590870bf-5337x5337.webp",
+              "caption": "",
+              "heading": "Some Heading",
+              "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "row_KxBFkV": {
+            "type": "row",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5587b4921272ad466dfc7e78d030b563548ba943-7360x4912.webp",
+              "caption": "",
+              "heading": "Some Heading 2",
+              "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "row_FfXCyC",
+          "row_KxBFkV"
+        ],
+        "settings": {
+          "layout": "full_bleed",
+          "image_height": "large",
+          "heading_size": "h1",
+          "text_style": "body",
+          "desktop_content_position": "top",
+          "desktop_content_alignment": "left",
+          "crazy_control": true,
+          "slide_height": "large",
+          "slider_visual": "counter",
+          "auto_rotate": false,
+          "change_slides_speed": 5,
+          "image_behavior": "none",
+          "show_text_below": true,
+          "accessibility_info": "Slideshow about our brand"
+        }
+      }
+    },
+    "order": [
+      "main",
+      "rich_text_9E3mzc",
+      "image_banner_9HRjtG",
+      "rich_text_6jyxnA",
+      "multirow_c8npwR",
+      "rich_text_Yyz9nK",
+      "multirow_slider_jki6r4"
+    ]
+  }
