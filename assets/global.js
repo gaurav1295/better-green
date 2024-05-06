@@ -1326,3 +1326,105 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+
+class ProductByTag extends HTMLElement {
+  constructor() {
+    super();
+    this.listItems = this.querySelectorAll('.tag-item');
+    this.productList = this.querySelector('.product-list');
+    this.productInfo = this.querySelector('.product-info');
+  
+    this.listItems.forEach(tagItem => {
+      tagItem.addEventListener('click', this.updateProductList.bind(this, tagItem.dataset.tag, tagItem));
+    });
+
+    this.listItems[1].click()
+  }
+
+  updateProductList(tag, tagItem) {
+    this.listItems.forEach(tagItem => {
+      tagItem.classList.remove('is-active')
+    });
+    tagItem.classList.add('is-active')
+    this.fetchProductsByTag(tag)
+      .then(products => {
+        this.products = products;
+        this.renderProductList(products);
+      })
+      .catch(error => {
+        console.error('Error fetching products:', error);
+        this.productList.innerHTML = '<p>Error fetching products.</p>';
+      });
+  }
+
+  async fetchProductsByTag(tag) {
+    // const url = `${window.location.pathname}/collections/all?q=tag:${tag}&limit=10`;
+    return fetch(`/products.json`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        return data.products.filter(product => product.tags.includes(tag));
+      });
+  }
+
+  renderProductList(products) {
+    if (products.length > 0) {
+      const productListHTML = '<ul>' +
+        products.map(product => `<li data-product="${product.id}">${product.title}</li>`).join('') +
+        '</ul>';
+        this.productList.innerHTML = productListHTML;
+    } else {
+      this.productList.innerHTML = '<p>No products found for this tag.</p>';
+    }
+
+    this.addListenerToProductList()
+  }
+
+  addListenerToProductList() {
+    const productListItems = this.productList.querySelectorAll('li');
+  
+    productListItems.forEach(productListItem => {
+      productListItem.addEventListener('click', event => {
+        productListItems.forEach(tagItem => {
+          tagItem.classList.remove('is-active')
+        });
+        productListItem.classList.add('is-active')
+        const productTitle = event.target.dataset.product;
+        const product = this.products.find(product => product.id == productTitle);
+        console.log(product)
+        this.renderProductInfo(product);
+      });
+    })
+
+    productListItems[0].click()
+  }
+
+  renderProductInfo(product) {
+    const productInfoHTML = `
+      <div class="product-info-item">
+        <div class="product-image">
+          <img src="${product.images[0].src}" alt="${product.title}">
+        </div>
+        <div class="product-desc">
+          <div class="ww">
+            <h5>Grower</h5>
+            ${product.vendor}
+          </div>
+          <div class="ww">
+            <h5>About</h5>
+            ${product.body_html}
+          </div>
+        </div>
+        
+      </div>
+    `;
+    this.productInfo.innerHTML = productInfoHTML;
+  }
+}
+
+customElements.define('product-by-tag', ProductByTag);

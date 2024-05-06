@@ -1,0 +1,115 @@
+/* Styling for the horizontal list container */
+.horizontal-list-container {
+    display: flex;
+    justify-content: left; /* Centers the list horizontally */
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  
+  /* Styling for the horizontal list */
+  .horizontal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 3rem;
+  }
+  
+  /* Styling for list items in the horizontal list */
+  .horizontal-list li {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for list items */
+  .horizontal-list li:hover {
+    color: rgba(var(--color-foreground), 1);
+    /* font-weight: 500; */
+  }
+  
+  /* Highlighted state for list items */
+  .horizontal-list li.highlighted {
+    color: #090404; /* Change text color to contrast */
+  }
+
+  .product-by-tag--side-margin-true {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+
+  .horizontal-list li {
+    color: rgba(var(--color-foreground), 0.50);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .is-active {
+    color: rgba(var(--color-foreground), 1) !important;
+  }
+
+  .info-container {
+    display: flex;
+  }
+
+  .info-container > div {
+    flex: 1;
+  }
+
+  .product-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .product-list li {
+    color: rgba(var(--color-foreground), 0.50);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 16px;
+    font-style: normal;
+        font-size: 16px;
+        letter-spacing: .004em;
+        text-transform: uppercase;
+        cursor: pointer;
+  }
+
+  .product-list li:hover {
+    color: rgba(var(--color-foreground), 1);
+    /* font-weight: 500; */
+  }
+
+  .product-info-item {
+    display: flex;
+    flex: 1;
+  }
+
+  .product-info-item .product-image {
+    /* width: 60%;
+    padding-bottom: 125%;
+    position: relative;
+    position: absolute;
+    height: 100%;
+    width: 100%; */
+  }
+
+  .product-info-item .product-image img {
+    height: 550px;
+    width: 400px;
+    object-fit: cover;
+
+  }
+
+  .product-info-item .product-desc {
+    margin-left: 2rem;
+  }
+
+  .product-info-item .product-desc .ww{
+    border-top: 1px solid rgba(var(--color-foreground), 0.10);
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.10);
+    padding: 2rem 0rem;
+  }
+  
