@@ -202,6 +202,19 @@
           "menu_border": "#121212",
           "alt_text": "#136450"
         }
+      },
+      "scheme-868f4a5e-8303-45ee-99eb-0af047e3fbb3": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212",
+          "menu_border": "#d3d3d3",
+          "alt_text": "#b8e0d6"
+        }
       }
     }
   },
@@ -398,5 +411,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+
+    ]
   }
 }

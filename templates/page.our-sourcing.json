@@ -23,20 +23,20 @@
         "text_cBKDYY": {
           "type": "text",
           "settings": {
-            "text": "<h2><em>Our Story<\/em><\/h2>"
+            "text": "<h2><em>Sourcing<\/em><\/h2>"
           }
         },
         "heading_pQAUzC": {
           "type": "heading",
           "settings": {
-            "heading": "IT STARTED WITH A PEACH",
+            "heading": "GO STRAIGHTTO THE GROWER",
             "heading_size": "hxxl"
           }
         },
         "caption_mAGk7w": {
           "type": "caption",
           "settings": {
-            "caption": "How a mission to find flavor grew into a food system revolution.",
+            "caption": "A unique supply chain built on direct relationships, secured through scale.",
             "text_style": "subtitle",
             "text_size": "medium"
           }
@@ -74,7 +74,7 @@
     "image_banner_9HRjtG": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/1f2c508b981b1189a82057c2ba91f3b95f252238-692x521.jpg",
+        "image": "shopify:\/\/shop_images\/5587b4921272ad466dfc7e78d030b563548ba943-7360x4912.webp",
         "show_side_margin": true,
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -121,7 +121,7 @@
         "caption_XBVfBk": {
           "type": "caption",
           "settings": {
-            "caption": "New York City in the weeks leading up to Christmas, 1999. The story goes that Franco Fubini — Natoora’s founder — visited Citarella. It was the second Citarella on 1313 3rd Ave in the Upper East Side, which was just around the block from where he lived. The family-run grocery store was already known for its fish, but it had a fresh produce section right at the entrance. This is where Franco overheard a woman asking for peaches. Peaches in December.",
+            "caption": "Our supply chain bridges the gap between the opaque distribution channels and wholesale markets that dominate, and fiercely localized farm gate schemes and grower markets. This gives our sourcing the transparency of direct grower relationships with the flex and impact that can only be achieved through scale.",
             "text_style": "subtitle",
             "text_size": "large"
           }
@@ -143,75 +143,95 @@
         "padding_bottom": 40
       }
     },
-    "multirow_BPapMm": {
-      "type": "multirow",
+    "custom_liquid_pe43zg": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\"><hr><\/div>",
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_kYkxCU": {
+      "type": "rich-text",
       "blocks": {
-        "row_HU78Dm": {
-          "type": "row",
+        "text_KdgJda": {
+          "type": "text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cd35e63c18ee0daca899fa76ef623f7111f61771-1080x1350.webp",
-            "caption": "",
-            "heading": "",
-            "text": "<p>Franco clearly recollects this moment — a single snapshot of his frustrations with New York’s food scene at the time. Cooking for friends, Franco spent his free time searching farmers markets for produce as exceptional as the foods he remembers eating growing up. Everything came up short.<\/p><p>Born in Argentina to a German-Jewish mother and Italian father, Franco spent his childhood immersed in varied and vibrant food cultures. His step-father’s work took the family to Italy, Egypt and the Netherlands in the 1970s and 80s.<\/p><p>At the time, in these countries, the industrialization of the food system hadn’t gone as far as it had in the UK and US. Franco remembers chutney in Egypt made from the fruits of wild mango trees. Summers passed in Positano, where lemon granitas and tomatoes from the vine were an almost daily ritual.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_kwLx7y": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/842e4cbb91bd45533b2711206b8702e8fef80899-1080x1350.webp",
-            "caption": "",
-            "heading": "",
-            "text": "<p>Living in NYC as an adult, Franco started cooking, working his way through Jacques Pépin’s <em>La Technique<\/em> to learn and relearn the classics. This meant spending a lot of time seeking out produce. Citarella, Union Square, Balducci’s and Grace’s Marketplace were his locals, but supermarket shelves revealed a distorted new reality.<\/p><p><\/p><p><\/p><p>Fruits and vegetables were available all year round. In pulling away from the seasons, we had made flavor almost impossible to find. We were asking for peaches in December.<\/p><p><\/p><p><\/p><p>London, 2004. Franco connected his entrepreneurship with food, joining forces with Solstice to launch their home delivery service. In November 2005, he moved over to Natoora — a French company specializing in sourcing fresh ingredients for home delivery — to launch their UK outpost. This was the very start of our food system revolution.<\/p>",
-            "button_label": "",
-            "button_link": ""
+            "text": "<h3>HOW WE SOURCE<\/h3><h5>RELATIONSHIPS, NOT TRANSACTIONS<\/h5><p>We have spent nearly 20 years building direct relationships with growers. Refusing to lean on second-hand opinions, we source produce based on face-to-face encounters, tasting fruits and vegetables at their origins. This means more than just knowing our growers by name; it means spending time together out in the field and around the kitchen table. We trust that they are committed to the health of their land and flavor because we have evolved together.<\/p><h5>HUBS IN EACH REGION<\/h5><p>Each grower is connected to a sourcing hub in London, Paris, Milan, Barcelona, New York, LA, Philadelphia, Melbourne, Miami or Copenhagen. Global in scale, our sourcing is local in function, with hubs reaching out to growers in a capillary network. Constant dialogue with our growers makes us nimble and allows us to withstand global and local shocks better. Like exercising a muscle, we’ve got the kind of flex that comes from putting natural variation and human connections first, on a daily basis.<\/p><h5>PUSHING BOUNDARIES<\/h5><p>From making growing plans to offering interest-free loans, we support growers to improve their methods or scale up what they’re doing right without compromising on flavor. Our sourcing also shapes demand, uprooting deep-set conceptions of food. Green Citrus; Winter Tomatoes; Sand-forced Radicchio — all unheard of or fiercely localized before we stepped in. Now, they’re stand-alone terms on the most innovative menus.<\/p>"
           }
         }
       },
       "block_order": [
-        "row_HU78Dm",
-        "row_kwLx7y"
+        "text_KdgJda"
       ],
       "settings": {
-        "image_height": "adapt",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "show_side_margin": true,
-        "desktop_image_width": "medium",
-        "heading_size": "h2",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-right",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
-    "rich_text_3GyjB3": {
-      "type": "rich-text",
+    "impact_collection_list_gBB9xd": {
+      "type": "impact-collection-list",
       "blocks": {
-        "heading_FJbCWR": {
-          "type": "heading",
+        "featured_collection_DyVwm4": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "For close to 20 years, we’ve built our sourcing around a very simple, yet immensely powerful ethos: flavor first.",
-            "heading_size": "h0"
+            "collection": "stores-are-learning-hubs",
+            "custom_url": "shopify:\/\/pages\/education"
           }
         },
-        "caption_B3KC4r": {
+        "featured_collection_tdyeyR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "we-share-our-knowledge",
+            "custom_url": "shopify:\/\/pages\/education"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_DyVwm4",
+        "featured_collection_tdyeyR"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "show_side_margin": true
+      }
+    },
+    "rich_text_iUXUCJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fFTRi7": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHAT WE LOOK FOR IN OUR GROWERS",
+            "heading_size": "hxl"
+          }
+        },
+        "caption_XXRfUm": {
           "type": "caption",
           "settings": {
-            "caption": "FRANCO FUBINI, NATOORA FOUNDER & CEO",
+            "caption": "We measure the impact of a grower’s practice on an individual basis. This approach is logistically complex but it means we have real insight into how our growers are actually farming. Fundamentally, we work with growers driven by flavor. More specifically, we look for growers committed to at least one of the following:",
             "text_style": "subtitle",
-            "text_size": "large"
+            "text_size": "medium"
           }
         }
       },
       "block_order": [
-        "heading_FJbCWR",
-        "caption_B3KC4r"
+        "heading_fFTRi7",
+        "caption_XXRfUm"
       ],
       "settings": {
         "desktop_content_position": "left",
@@ -219,123 +239,88 @@
         "show_side_margin": true,
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
-    "multirow_cDmM9p": {
-      "type": "multirow",
+    "multirow_slider_VeUbkM": {
+      "type": "multirow-slider",
       "blocks": {
-        "row_9BCmz6": {
+        "row_8YeHwt": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/131ea3906999fb1314af1f27d8f0a24caa23fbf4-885x886.webp",
+            "image": "shopify:\/\/shop_images\/60e895d4c20488b5a3c08ce4dd46a3fc3a9965f8-2596x1730.webp",
             "caption": "",
-            "heading": "",
-            "text": "<p>Natoora came to life in local markets; vital windows into regional food systems and an opportunity to meet the people upholding them. It’s here — at the Milan, Barcelona, and Fondi markets — that Franco found culturally rich products that stay local, usually as a result of fragmented distribution systems and the unwillingness of wholesalers or specialists to invest in deep, local sourcing. They became our root systems, capable of reaching deep into regions and broadening their value.<\/p><p>It was the direct relationships forged at and through these markets that became springboards for radical change. At the Milan market, Franco tasted a White Peach with flesh almost entirely blushed with deep purple streaks. Two years of hunting around the Italian countryside to trace that peach back to its grower led him to Domenico, whose stone fruits have become an institution for us in Europe over the warmer months.<\/p><p>Small-scale growers like Domenico have become our lifeblood. Anyone can pursue new flavor peaks, but only exceptional growers with incredible instincts and fierce resolution can come close to achieving them.<\/p>",
-            "button_label": "Meet our growers",
+            "heading": "Traditional Methods",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
-        "row_QJNtpn": {
+        "row_8F3rdD": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/f2e4243c69e03734c3fef392b8111300017e328d-1080x1080.webp",
+            "image": "shopify:\/\/shop_images\/0ed368c13d194fcf42f59a08d84435f3a51ff0f6-1620x1080.webp",
             "caption": "",
-            "heading": "",
-            "text": "<p>Today, we've taken the revolution beyond London to New York, Miami, Paris, Malmö, Copenhagen and Melbourne. Each city has its own, unique supply chain adapted to its locality. Preserving this granularity is vital to the integrity of our expansion. Far from an extensive, opaque export system, we have built local chains which thrive by way of their direct connections.<\/p><p>This growth is necessary if we are going to create a model for a food system strong enough to rival the dominant, yield-driven supply chains.<\/p>",
-            "button_label": "How we source",
-            "button_link": ""
-          }
-        },
-        "row_reeqqH": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/842e4cbb91bd45533b2711206b8702e8fef80899-1080x1350.webp",
-            "caption": "",
-            "heading": "",
-            "text": "<p>With a growing understanding of the impact of our food choices (and the value of making better ones), it was time to take the flavor-first produce to home cooks — the next step in shifting the habits that underpin our food system.<\/p><p>First, we looked at supermarket shelves, where intensively farmed, year-round produce dominated. By working with, not against them, we realized that we could have the biggest impact on the day-to-day spending habits of consumers.<\/p><p>In 2012, we started working with Ocado, then Waitrose, Selfridges, Wholefoods and Eataly in the UK and Monoprix in Paris. In 2013, we opened the first of our four West London stores.<\/p><p>Then, in March 2020<strong>, <\/strong>as the pandemic led to local lockdowns at a global scale and restaurants were forced to close, we continued to back our growers by pivoting to home deliveries in New York and London. In the first week, we delivered to over 500 New York homes.<\/p>",
+            "heading": "Accesable Scale",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_label": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "row_9BCmz6",
-        "row_QJNtpn",
-        "row_reeqqH"
+        "row_8YeHwt",
+        "row_8F3rdD"
       ],
       "settings": {
-        "image_height": "adapt",
-        "show_side_margin": true,
-        "desktop_image_width": "medium",
+        "layout": "full_bleed",
+        "image_height": "large",
         "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
+        "text_style": "subtitle",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_banner_VzLpnf": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_3cmHmC": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>OUR STORY IS FAR FROM FINISHED.IN FACT, IT'S ONLY JUST GETTING STARTED.<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "buttons_nXL4PR": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Be part of it",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_3cmHmC",
-        "buttons_nXL4PR"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/60e895d4c20488b5a3c08ce4dd46a3fc3a9965f8-2596x1730.webp",
-        "show_side_margin": true,
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "crazy_control": true,
+        "slide_height": "large",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text_KybDPW": {
+    "custom_liquid_JANUCg": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\"><hr><\/div>",
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_tnm4Kg": {
       "type": "rich-text",
       "blocks": {
-        "heading_X3EkVY": {
+        "heading_GpCLYi": {
           "type": "heading",
           "settings": {
-            "heading": "Hear more from Franco in our podcast, Transform the Food System, as he talks to some of the people that inspire him the most.",
-            "heading_size": "h2"
+            "heading": "BEYOND FRUITS & VEGETABLES",
+            "heading_size": "hxl"
+          }
+        },
+        "caption_epRjRt": {
+          "type": "caption",
+          "settings": {
+            "caption": "We extend our sourcing beyond fresh produce. We work with deli, dairy and dry foods producers who share our commitment to provenance. By broadening our sourcing, we can have a greater impact on the food system.",
+            "text_style": "subtitle",
+            "text_size": "medium"
           }
         }
       },
       "block_order": [
-        "heading_X3EkVY"
+        "heading_GpCLYi",
+        "caption_epRjRt"
       ],
       "settings": {
         "desktop_content_position": "left",
@@ -344,7 +329,117 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
+      }
+    },
+    "impact_collection_list_8h7igF": {
+      "type": "impact-collection-list",
+      "blocks": {
+        "featured_collection_8fTYFi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "2019-2020-impact-report",
+            "custom_url": "shopify:\/\/pages\/education"
+          }
+        },
+        "featured_collection_QhxLRX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "2020-2021-impact-report",
+            "custom_url": "shopify:\/\/pages\/education"
+          }
+        },
+        "featured_collection_XNL8JD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "2023-react",
+            "custom_url": "shopify:\/\/pages\/education"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_8fTYFi",
+        "featured_collection_QhxLRX",
+        "featured_collection_XNL8JD"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "show_side_margin": true
+      }
+    },
+    "rich_text_KErBHy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YxFDCe": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR SOURCING DEEP DRIVE",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YxFDCe"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "show_side_margin": true,
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "impact_collection_list_bXeGr4": {
+      "type": "impact-collection-list",
+      "blocks": {
+        "featured_collection_AMhzbC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "2019-2020-impact-report",
+            "custom_url": "shopify:\/\/pages\/education"
+          }
+        },
+        "featured_collection_y8gExT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "2020-2021-impact-report",
+            "custom_url": "shopify:\/\/pages\/education"
+          }
+        },
+        "featured_collection_nzAYW3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "2023-react",
+            "custom_url": "shopify:\/\/pages\/education"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_AMhzbC",
+        "featured_collection_y8gExT",
+        "featured_collection_nzAYW3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "show_side_margin": true
       }
     }
   },
@@ -353,10 +448,15 @@
     "rich_text_9E3mzc",
     "image_banner_9HRjtG",
     "rich_text_cYKz36",
-    "multirow_BPapMm",
-    "rich_text_3GyjB3",
-    "multirow_cDmM9p",
-    "image_banner_VzLpnf",
-    "rich_text_KybDPW"
+    "custom_liquid_pe43zg",
+    "rich_text_kYkxCU",
+    "impact_collection_list_gBB9xd",
+    "rich_text_iUXUCJ",
+    "multirow_slider_VeUbkM",
+    "custom_liquid_JANUCg",
+    "rich_text_tnm4Kg",
+    "impact_collection_list_8h7igF",
+    "rich_text_KErBHy",
+    "impact_collection_list_bXeGr4"
   ]
 }
