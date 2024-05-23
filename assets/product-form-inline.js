@@ -7,13 +7,13 @@ if (!customElements.get('product-form-inline')) {
   
           this.form = this.querySelector('form');
           this.form.querySelector('[name=id]').disabled = false;
-        //   this.quantityInput = this.form.querySelector('[name=quantity]');
           this.plusButtons = this.form.querySelectorAll('.plus-button');
           this.minusButtons = this.form.querySelectorAll('.minus-button');
           this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
           this.plusButtons.forEach(button => button.addEventListener('click', this.onPlusButtonClick.bind(this)));
           this.minusButtons.forEach(button => button.addEventListener('click', this.onMinusButtonClick.bind(this)));
           this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+
           this.submitButton = this.querySelector('[type="submit"]');
   
           if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
@@ -44,9 +44,12 @@ if (!customElements.get('product-form-inline')) {
             formData.append('sections_url', window.location.pathname);
             this.cart.setActiveElement(document.activeElement);
           }
+
           config.body = formData;
           fetch(`${routes.cart_add_url}`, config)
-            .then((response) => response.json())
+            .then((response) => {
+              return response.json()
+            })
             .then((response) => {
               if (response.status) {
                 publish(PUB_SUB_EVENTS.cartError, {
@@ -91,6 +94,8 @@ if (!customElements.get('product-form-inline')) {
               } else {
                 this.cart.renderContents(response);
               }
+
+              // this.fetchProductGrid(response.id)
             })
             .catch((e) => {
               console.error(e);
@@ -100,7 +105,49 @@ if (!customElements.get('product-form-inline')) {
               if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
               if (!this.error) this.submitButton.removeAttribute('aria-disabled');
               this.querySelector('.loading__spinner').classList.add('hidden');
+              window.location.reload();
             });
+        }
+
+        fetchProductGrid(productId) {
+          const sectionsUrl = window.location.pathname;
+          const sectionId = 'main-collection-product-grid'; // Section ID for the product grid in Dawn theme
+
+          const config = {
+              method: 'GET',
+              headers: {
+                  'X-Requested-With': 'XMLHttpRequest'
+              }
+          };
+
+          fetch(`${sectionsUrl}?sections=${sectionId}`, config)
+              .then((response) => {
+                  if (!response.ok) {
+                      throw new Error('Network response was not ok ' + response.statusText);
+                  }
+                  return response.json();
+              })
+              .then((html) => {
+                  const sectionHtmlFromResponse = html['main-collection-product-grid']
+
+                  const parser = new DOMParser();
+                  const doc = parser.parseFromString(sectionHtmlFromResponse, 'text/html');
+                  console.log(doc)
+
+                  // console.log()
+                  // const elementToUpdate = document.querySelector(`[data-product-id="${productId}"]`);
+                  // console.log(elementToUpdate)
+                  // const 
+                  // const newProductGrid = doc.querySelector(`#shopify-section-${sectionId}`);
+
+                  // const currentProductGrid = document.querySelector(`#shopify-section-${sectionId}`);
+                  // if (currentProductGrid && newProductGrid) {
+                  //     currentProductGrid.innerHTML = newProductGrid.innerHTML;
+                  // }
+              })
+              .catch((e) => {
+                  console.error('Error fetching product grid:', e);
+              });
         }
   
         onPlusButtonClick(evt) {
