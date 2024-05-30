@@ -236,7 +236,14 @@ if (!customElements.get('cart-note')) {
         this.addEventListener(
           'input',
           debounce((event) => {
-            const body = JSON.stringify({ note: event.target.value });
+            const storedDeliveryDate = localStorage.getItem('delivery-date');
+            const storedPincode = localStorage.getItem('delivery-pincode');
+            const string = `
+              Extra Info :: 
+              delivery date: ${ storedDeliveryDate || '' }
+              delivery pincode: ${ storedPincode || '' } 
+              NOTE: ${ event.target.value }`;
+            const body = JSON.stringify({ note: string });
             fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
           }, ON_CHANGE_DEBOUNCE_TIMER)
         );
@@ -245,21 +252,21 @@ if (!customElements.get('cart-note')) {
   );
 }
 
-if (!customElements.get('cart-delivery-pincode')) {
-  customElements.define(
-    'cart-delivery-pincode',
-    class CartDeliveryPincode extends HTMLElement {
-      constructor() {
-        super();
+// if (!customElements.get('cart-delivery-pincode')) {
+//   customElements.define(
+//     'cart-delivery-pincode',
+//     class CartDeliveryPincode extends HTMLElement {
+//       constructor() {
+//         super();
 
-        this.addEventListener(
-          'input',
-          debounce((event) => {
-            const body = JSON.stringify({ deliveryPincode: event.target.value });
-            fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
-          }, ON_CHANGE_DEBOUNCE_TIMER)
-        );
-      }
-    }
-  );
-}
+//         this.addEventListener(
+//           'input',
+//           debounce((event) => {
+//             const body = JSON.stringify({ deliveryPincode: event.target.value });
+//             fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
+//           }, ON_CHANGE_DEBOUNCE_TIMER)
+//         );
+//       }
+//     }
+//   );
+// }
