@@ -244,3 +244,22 @@ if (!customElements.get('cart-note')) {
     }
   );
 }
+
+if (!customElements.get('cart-delivery-pincode')) {
+  customElements.define(
+    'cart-delivery-pincode',
+    class CartDeliveryPincode extends HTMLElement {
+      constructor() {
+        super();
+
+        this.addEventListener(
+          'input',
+          debounce((event) => {
+            const body = JSON.stringify({ deliveryPincode: event.target.value });
+            fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
+          }, ON_CHANGE_DEBOUNCE_TIMER)
+        );
+      }
+    }
+  );
+}

@@ -95,10 +95,243 @@
     }
   }
 
+  .date-desc {
+    color: #f2f2f2;
+    display: inline-block;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 7px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+
+  .date-dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+
   @media only screen and (max-width: 768px) {
     .pre-header {
       display: none;
     }
+  }
+
+  @media (max-width: 768px) {
+  .date-dropdown-container {
+    display: none;
+    }
+  }
+
+  .selected-date {
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .selected {
+    background-color: #392f2c!important;
+    color: #f9f8f4!important;
+  }
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    /* padding: 5px; */
+    border-radius: 6px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    top: 85%;
+    right: 7%;
+    transform: translateX(-50%);
+  }
+
+  .tooltiptext:before {
+    background: #fcfcfa;
+    box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, .1), -1px -1px 0 0 rgba(0, 0, 0, .2);
+    content: " ";
+    height: 10px;
+    left: 48%;
+    position: absolute;
+    top: -5px;
+    transform: rotate(45deg);
+    width: 10px;
+  }
+
+  /* Increased specificity for improved styling control (optional) */
+  #selectedDate .tooltiptext {
+    /* Additional styles for the specific tooltip of this element */
+  }
+
+  .tooltiptext.show {
+    visibility: visible; /* Make tooltip visible on click */
+  }
+
+
+  .delivery-container {
+    padding: 24px;
+    /* margin: 10px 0; Add some margin for better spacing */
+  }
+
+  .delivery-label {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    /* font-weight: bold;
+    margin-bottom: 5px; Add some space below the label */
+  }
+
+  .delivery-options {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    /* margin: 0; */
+    margin-top: 20px;
+  }
+
+  .delivery-option {
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    border: 1px solid #392f2c;
+    border-radius: 50px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    /* font-family: Graphik, Helvetica Neue, Helvetica, Arial, sans-serif; */
+    /* font-size: 1.083rem; */
+    /* font-size: 16px; */
+    /* font-weight: 400; */
+    height: 40px;
+    letter-spacing: .2px;
+    letter-spacing: .05px;
+    /* line-height: 1.85em; */
+    /* line-height: 16px; */
+    margin-bottom: 8px;
+    padding: 0 16px;
+    text-transform: none;
+    align-content: center;
+  }
+
+  .delivery-option:hover {
+    background-color: #392f2c;
+    color: #f9f8f4;
+    /* background-color: #eee; Change background color on hover */
+  }
+
+  .delivery-option.active {
+    background-color: #392f2c;
+    color: #f9f8f4;
+    /* background-color: #eee; Change background color on hover */
+  }
+
+  /* .pincode-modal {} */
+
+  .modal-overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .modal {
+      background: white;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      text-align: center;
+  }
+
+  .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+  }
+
+  .logo {
+      width: 100px;
+      margin-bottom: 20px;
+  }
+
+  .modal-header h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+  }
+
+  .modal-body {
+    color: black;
+  }
+
+  .modal-body p {
+      margin-bottom: 20px;
+      color: black;
+  }
+
+  .modal-body h2 {
+      margin-bottom: 20px;
+      color: black;
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  label {
+      margin-bottom: 8px;
+      font-size: 1em;
+  }
+
+  input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+  }
+
+  .submit-btn {
+    background-color: #0b5e42;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .submit-btn:hover {
+      background-color: #7d7d7d;
+  }
+
+  @media (min-width: 768px) {
+      .modal {
+          width: 60%;
+      }
+  }
+
+  @media (min-width: 1024px) {
+      .modal {
+          width: 40%;
+      }
   }
 {%- endstyle -%}
 
@@ -131,6 +364,19 @@
     %}
 
     <div class="header__icons">
+      
+      <div id="date-dropdown-container" class="date-dropdown-container">
+        <p class="date-desc">Shopping for 
+          <span class="selected-date" id="selectedDate">
+            <span id="deliveryDateText"></span>
+            <span id="tooltiptext" class="tooltiptext"></span>
+          </span>
+          In 
+          <span class="selected-date" id="selectedPincode">Pincode</span>
+        </p>
+        
+      </div>
+
       {%- if shop.customer_accounts_enabled -%}
         {%- if customer -%}
           {% render 'icon-account' %}
@@ -178,8 +424,48 @@
     </div>
   </header>
 
- 
+  <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <div class="modal-content">
+                <div class="modal-header">
+                  <div class="header__heading-logo-wrapper">
+                    {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                    {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                    {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                    {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                    {{ settings.logo | image_url: width: 600 | image_tag:
+                      class: 'header__heading-logo motion-reduce',
+                      widths: widths,
+                      height: logo_height,
+                      width: settings.logo_width,
+                      alt: logo_alt,
+                      sizes: sizes,
+                      preload: true
+                    }}
+                  </div>
+                </div>
+                <div class="modal-body">
+                    <div id="content-wrapper">
+                      <h2>Enter a new zip code for your delivery</h2>
+                      {% comment %} <p>You are currently shopping for <strong>90039</strong></p> {% endcomment %}
+                      <form id="pincodeForm">
+                          <label for="zip-code">Zip Code</label>
+                          <input type="text" id="zip-code" name="zip-code" placeholder="Zip Code">
+                          <button type="submit" class="submit-btn">Continue</button>
+                      </form>
+                    </div>
+                    <div id="error-message" class="hidden">
+                      <h2>We're sorry, but delivery to this pin code is currently unavailable.</h2>
+                      <p>We're constantly expanding our delivery areas. Please check back soon or enter a different zip code.</p>
+                      <button id="close-btn-pincode" class="submit-btn">Try Another Pincode</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+
 {%- liquid
   for block in section.blocks
     if block.type == '@app'
@@ -298,6 +584,215 @@
   }
 
   customElements.define('sticky-pre-header', StickyPreHeader);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const selectedDateEl = document.getElementById("selectedDate");
+    const tooltipEl = document.getElementById("tooltiptext")
+
+    const today = new Date(); // Get today's date
+
+    // Create new Date objects for tomorrow, day after tomorrow, and 2 days after tomorrow
+    const tomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+    const dayAfterTomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 2);
+    const twoDaysAfterTomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 3);
+
+
+    // Function to format the date in a specific format
+    const formatDate = (date) => {
+      const options = { month: 'short', day: 'numeric' };
+      return date.toLocaleDateString('en-US', options);
+    };
+
+    // Formatted dates 
+    const tomorrowFormatted = formatDate(tomorrow);
+    const dayAfterTomorrowFormatted = formatDate(dayAfterTomorrow);
+    const twoDaysAfterTomorrowFormatted = formatDate(twoDaysAfterTomorrow);
+
+    // Array containing weekdays
+    const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    // Get weekdays for each date
+    const tomorrowWeekday = weekdays[tomorrow.getDay()];
+    const dayAfterTomorrowWeekday = weekdays[dayAfterTomorrow.getDay()];
+    const twoDaysAfterTomorrowWeekday = weekdays[twoDaysAfterTomorrow.getDay()];
+
+    const tooltipHTML = `
+          <div class="delivery-container">
+            <span class="delivery-label">Select a delivery day</span>
+            <ul class="delivery-options">
+              <li class="delivery-option" data-delivery-date="${tomorrow}"">Tomorrow (${tomorrowFormatted})</li>
+              <li class="delivery-option" data-delivery-date="${dayAfterTomorrow}">${dayAfterTomorrowWeekday} (${dayAfterTomorrowFormatted})</li>
+              <li class="delivery-option" data-delivery-date="${twoDaysAfterTomorrow}">${twoDaysAfterTomorrowWeekday} (${twoDaysAfterTomorrowFormatted})</li>
+            </ul>
+          </div>
+    `;
+
+    const tempContainer = document.createElement("div");
+
+    // Set the innerHTML of the tempContainer (parsing potential escaping issues)
+    tempContainer.innerHTML = tooltipHTML;
+
+    // Extract the desired content from the tempContainer (optional)
+    const deliveryContainer = tempContainer.querySelector(".delivery-container");
+
+    // Check if desired content is found
+    if (deliveryContainer) {
+        // Set the tooltip content using the extracted element (optional)
+        tooltipEl.appendChild(deliveryContainer); // Or set tooltipEl.innerHTML directly
+    } else {
+        console.error("Delivery container not found in tooltip HTML.");
+    }
+
+    
+     // Check for existing selection from localStorage
+    const storedDeliveryDate = localStorage.getItem('delivery-date');
+    if (storedDeliveryDate && storedDeliveryDate < new Date().toISOString()) {
+        const deliveryOptions = tooltipEl.querySelectorAll('.delivery-option');
+        // console.log(deliveryOptions);
+        deliveryOptions.forEach(option => {
+          // console.log(option.dataset.deliveryDate, storedDeliveryDate, option.dataset.deliveryDate === storedDeliveryDate);
+          if (option.dataset.deliveryDate === storedDeliveryDate) {
+            setSelected(option, storedDeliveryDate);
+          }
+        });
+    } else {
+        // If no selection is found, set the first option as selected
+        const firstOption = tooltipEl.querySelector('.delivery-option');
+        if (firstOption) {
+          localStorage.setItem('delivery-date', firstOption.dataset.deliveryDate);
+          setSelected(firstOption, firstOption.dataset.deliveryDate);
+        }
+    }
+
+      // Attach click event listener to the tooltip element
+    const deliveryOptions = tooltipEl.querySelectorAll('.delivery-option').forEach(option => {
+        option.addEventListener('click', handleDeliveryClick.bind(this));
+    });
+
+    selectedDateEl.addEventListener("click", function() {
+      tooltipEl.classList.toggle("show");
+
+      // Position the tooltip below the selectedDateEl
+      const tooltipRect = tooltipEl.getBoundingClientRect();
+      const selectedDateRect = selectedDateEl.getBoundingClientRect();
+      tooltipEl.style.top = `${selectedDateRect.bottom + 5}px`; // Add a 5px offset for spacing
+      tooltipEl.style.left = `${selectedDateRect.left}px`;
+    });
+
+    document.addEventListener("click", function(event) {
+      // Check if the clicked element is not the selectedDateEl or a descendant of tooltipEl
+      if (!selectedDateEl.contains(event.target) && event.target !== tooltipEl) {
+        // Hide the tooltip
+        tooltipEl.classList.remove("show");
+      }
+    })
+
+    function setSelected(element, selectedDate) {
+      tooltipEl.querySelectorAll('.delivery-option').forEach(option => {
+        option.classList.remove('selected');
+      });
+      element.classList.add('selected');
+      const deliveryDateText = document.getElementById("deliveryDateText");
+
+      // console.log(selectedDate , new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1))
+      if (selectedDate == new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1)) {
+        deliveryDateText.innerHTML = "Tomorrow";
+      } else {
+        deliveryDateText.innerHTML = new Date(element.dataset.deliveryDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      }
+    }
+
+    function handleDeliveryClick(event) {
+      event.stopPropagation();
+      const clickedElement = event.target;
+      if (clickedElement.classList.contains('delivery-option')) {
+        // console.log(clickedElement.dataset, clickedElement);
+        const selectedDeliveryDate = clickedElement.dataset.deliveryDate;
+        localStorage.setItem('delivery-date', selectedDeliveryDate);
+
+        setSelected(clickedElement, selectedDeliveryDate);
+      }
+    }
+  });
+
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const selectedPincodeEl = document.getElementById("selectedPincode");
+
+    selectedPincodeEl.addEventListener("click", function() {
+      document.getElementById('modal-overlay').style.display = 'flex';
+    });
+
+    document.getElementById('close-btn').addEventListener('click', function() {
+        document.getElementById('modal-overlay').style.display = 'none';
+    });
+    const form = document.getElementById('pincodeForm');
+    const zipCodeInput = document.getElementById('zip-code');
+    const modalContent = document.getElementById('content-wrapper');
+    const errorMessage = document.getElementById('error-message');
+    const errorMessageCloseBtn = document.getElementById('close-btn-pincode');
+    const submitButton = document.getElementById('submit-btn');
+    const storedDeliveryDate = localStorage.getItem('delivery-pincode');
+  
+    selectedPincodeEl.innerHTML = storedDeliveryDate || 'Pincode'
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault(); // Prevent the default form submission
+
+      const zipCode = zipCodeInput.value;
+
+      try {
+        var data = {
+                      pincode: zipCode,
+                      // email: "johndoe@example.com"
+                    };
+
+                    $.ajax({
+                      type: "POST",
+                      url: "https://b0ae-2401-4900-1c8a-a090-5949-6a8d-e8f7-3bf9.ngrok-free.app/api/pincode", // Replace with your actual endpoint URL
+                      data: JSON.stringify({ pincode: zipCode }), // Stringify the data object
+                      contentType: 'application/json', // Set the Content-Type header
+                      dataType: 'json', // Expected response format (optional)
+                      success: function(response) {
+
+                        // Handle successful response
+                        console.log("Success:", response);
+                        // Update UI or perform actions based on the response
+                        if (response.available) {
+                          // Save delivery pincode to local storage on success
+                          localStorage.setItem('delivery-pincode', zipCode);
+                          document.getElementById('modal-overlay').style.display = 'none';
+                          deliveryDate.innerHTML = zipCode;
+                        } else {
+                          errorMessage.classList.remove('hidden');
+                          modalContent.classList.add('hidden');
+                          selectedPincodeEl.innerHTML = 'Pincode'
+                          localStorage.removeItem('delivery-pincode');
+                          // Update modal content to indicate delivery unavailability
+                          // const modalContent = document.querySelector('.modal-content');
+                          // modalContent.innerHTML = `<h2>We don't currently deliver to ${zipCode}, but we're expanding soon!</h2>`;
+                        }
+
+                      },
+                      error: function(jqXHR, textStatus, errorThrown) {
+                        // Handle errors
+                        // console.error("Error:", textStatus, errorThrown);
+                        errorMessage.classList.remove('hidden');
+                        // Display error message or handle appropriately
+                      }
+                    })
+      } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        // Handle errors appropriately, e.g., display an error message to the user
+      }
+    });
+
+    errorMessageCloseBtn.addEventListener('click', function() {
+      errorMessage.classList.add('hidden');
+      modalContent.classList.remove('hidden');
+    });
+  });
+
 {% endjavascript %}
 
 

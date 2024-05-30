@@ -23,6 +23,17 @@ if (!customElements.get('product-form-inline')) {
   
         onSubmitHandler(evt) {
           evt.preventDefault();
+          // check if localstorage has delivery-date  and delivery-pincode
+          const storedDeliveryDate = localStorage.getItem('delivery-date');
+          const storedDeliveryPincode = localStorage.getItem('delivery-pincode');
+          if (!storedDeliveryDate) {
+            return 
+          } 
+          if (!storedDeliveryPincode) {
+            document.getElementById('modal-overlay').style.display = 'flex';
+            return
+          }
+          
           if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
   
           this.handleErrorMessage();

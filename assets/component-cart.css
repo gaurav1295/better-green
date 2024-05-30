@@ -205,6 +205,10 @@ cart-items {
     max-width: 35rem;
   }
 
+  .cart-delivery-pincode {
+    max-width: 35rem;
+  }
+
   .cart__update-button {
     margin-bottom: 0;
     margin-right: 0.8rem;

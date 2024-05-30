@@ -466,6 +466,23 @@
               >{{ cart.note }}</textarea>
             </cart-note>
           </details>
+          <details id="Details-deliveryPincode" style="margin-top: 1rem;">
+            <summary>
+              <span class="summary__title">
+                Delivery Date And Pincode 
+                {% render 'icon-caret' %}
+              </span>
+            </summary>
+            <cart-delivery-pincode class="cart__note field">
+              <label class="visually-hidden" for="Details-deliveryPincode">{{ 'sections.cart.note' | t }}</label>
+              <textarea
+                id="CartDrawer-deliveryPincode"
+                class="text-area text-area--resize-vertical field__input"
+                name="deliveryPincode"
+                placeholder="delivery and pincode"
+              >{{ cart.deliveryPincode }}</textarea>
+            </cart-delivery-pincode>
+          </details>
         {%- endif -%}
 
         <!-- Start blocks -->
