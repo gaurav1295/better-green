@@ -60,7 +60,7 @@
     font-size: 30px;
   }
 
-  .gc-button {
+  /* .gc-button {
     cursor: pointer;
     border-radius: 80px;
     transition-duration: 0.35s;
@@ -71,7 +71,7 @@
     height: 40px;
     transition: background-color 0.2s;
     color: white;
-  }
+  } */
 
   .gc-icon {
     width: 1.5rem;
@@ -245,7 +245,7 @@
                       <span class="sold-out-message hidden">
                         {{ 'products.product.sold_out' | t }}
                       </span>
-                      {%- render 'loading-spinner' -%}
+                      {% comment %} {%- render 'loading-spinner' -%} {% endcomment %}
                     </button> {% endcomment %}
                     <button
                       id="{{ product_form_id }}-submit"
@@ -264,6 +264,11 @@
                         {%- if card_product.selected_or_first_available_variant.available -%}
                           {% comment %} {{ 'products.product.add_to_cart' | t }} {% endcomment %}
                           {% render 'icon-plus' %}
+                          <div class="loading-spinner-gc" style="display: flex;
+                          justify-content: center;
+                          align-items: center;">
+                            {%- render 'loading-spinner' -%}
+                          </div>
                         {%- else -%}
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
@@ -271,7 +276,7 @@
                       <span class="sold-out-message hidden">
                         {{ 'products.product.sold_out' | t }}
                       </span>
-                      {%- render 'loading-spinner' -%}
+                     
                     </button>
                   </div>
                 {%- endform -%}

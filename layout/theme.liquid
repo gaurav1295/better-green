@@ -90,6 +90,7 @@
         --payment-terms-background-color: rgb({{ scheme.settings.background.rgb }});
         --color-menu-border: {{ scheme.settings.menu_border.red }},{{ scheme.settings.menu_border.green }},{{ scheme.settings.menu_border.blue }};
         --color-alt-text: {{ scheme.settings.alt_text.red }},{{ scheme.settings.alt_text.green }},{{ scheme.settings.alt_text.blue }};
+        /* --color-alt-button: {{ scheme.settings.alt_text.red }},{{ scheme.settings.alt_text.green }},{{ scheme.settings.alt_text.blue }}; */
       }
       {% endfor %}
 
@@ -251,6 +252,37 @@
         body {
           font-size: 1.6rem;
         }
+      }
+
+      .gc-link {
+            padding: 15px 10px;
+            cursor: pointer;
+            width: 50px;
+            border-radius: 30px;
+            transition-duration: 0.35s;
+            transition-property: width, border-radius;
+            width: 100px;
+            background-color: rgba(var(--color-button), 1);
+            /* border: none; */
+            height: 40px;
+            transition: background-color 0.2s;
+            color: rgba(var(--color-button-text), 1);
+            text-decoration: blink;
+            margin-top: 10px;
+            border: none;
+      }
+
+      .gc-button {
+        cursor: pointer;
+        border-radius: 80px;
+        transition-duration: 0.35s;
+        transition-property: width, border-radius;
+        width: 100px;
+        background-color: rgba(var(--color-button), 1);
+        border: none;
+        height: 40px;
+        transition: background-color 0.2s;
+        color: rgba(var(--color-button-text), 1);
       }
     {% endstyle %}
 

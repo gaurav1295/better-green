@@ -1405,6 +1405,7 @@ class ProductByTag extends HTMLElement {
   }
 
   renderProductInfo(product) {
+    const productUrl = `/products/${product.handle}`;
     const productInfoHTML = `
       <div class="product-info-item">
         <div class="product-image">
@@ -1419,8 +1420,10 @@ class ProductByTag extends HTMLElement {
             <h5>About</h5>
             ${product.body_html}
           </div>
+          <div style="margin-top: 32px;">
+            <a href="${productUrl}" target="_blank" class="gc-link">Buy Now</a>
+          </div>
         </div>
-        
       </div>
     `;
     this.productInfo.innerHTML = productInfoHTML;

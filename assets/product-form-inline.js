@@ -41,7 +41,8 @@ if (!customElements.get('product-form-inline')) {
           this.submitButton.setAttribute('aria-disabled', true);
           this.submitButton.classList.add('loading');
           this.querySelector('.loading__spinner').classList.remove('hidden');
-  
+          this.querySelector('.gc-icon').classList.add('hidden');
+
           const config = fetchConfig('javascript');
           config.headers['X-Requested-With'] = 'XMLHttpRequest';
           delete config.headers['Content-Type'];
@@ -116,6 +117,7 @@ if (!customElements.get('product-form-inline')) {
               if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
               if (!this.error) this.submitButton.removeAttribute('aria-disabled');
               this.querySelector('.loading__spinner').classList.add('hidden');
+              this.querySelector('.gc-icon').classList.remove('hidden');
               window.location.reload();
             });
         }

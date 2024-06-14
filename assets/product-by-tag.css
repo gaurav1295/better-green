@@ -33,10 +33,17 @@
   }
 
   .product-by-tag--side-margin-true {
-    width: 95%;
+    width: 95% !important;
     margin: 0 auto;
     padding-left: 0px!important;
     padding-right: 0px!important;
+  }
+
+  .product-by-tag--side-margin-false {
+    width: var(--page-width);
+    margin: 0 auto;
+    /* padding-left: 0px!important;
+    padding-right: 0px!important; */
   }
 
   .horizontal-list li {
