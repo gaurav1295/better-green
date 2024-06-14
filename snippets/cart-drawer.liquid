@@ -445,10 +445,6 @@
             </p>
           </div>
           <div id="CartDrawer-CartErrors" role="alert"></div>
-          {% comment %} <div class="cart__custom-attribute">
-            <label for="custom_attribute">Custom Attribute:</label>
-            <input type="text" name="attributes[custom_attribute]" id="custom_attribute">
-          </div> {% endcomment %}
         </form>
       </cart-drawer-items>
       <div class="drawer__footer">
@@ -470,24 +466,23 @@
               >{{ cart.note }}</textarea>
             </cart-note>
           </details>
-          {% comment %} <details id="Details-deliveryPincode" style="margin-top: 1rem;">
+          <details id="Details-deliveryPincode" style="margin-top: 1rem;">
             <summary>
               <span class="summary__title">
                 Delivery Date And Pincode 
                 {% render 'icon-caret' %}
               </span>
             </summary>
-            {% comment %} <cart-delivery-pincode class="cart__note field">
+            <cart-delivery-pincode class="cart__note field">
               <label class="visually-hidden" for="Details-deliveryPincode">{{ 'sections.cart.note' | t }}</label>
               <textarea
                 id="CartDrawer-deliveryPincode"
-                disabled
                 class="text-area text-area--resize-vertical field__input"
                 name="deliveryPincode"
                 placeholder="delivery and pincode"
-              ></textarea>
-            </cart-delivery-pincode> {% endcomment %}
-          </details> {% endcomment %}
+              >{{ cart.deliveryPincode }}</textarea>
+            </cart-delivery-pincode>
+          </details>
         {%- endif -%}
 
         <!-- Start blocks -->

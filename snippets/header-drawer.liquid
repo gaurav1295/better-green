@@ -5,25 +5,6 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
-<style>
-  .hide {
-    display: none;
-  }
-
-  .show {
-    display: block!important;
-  }
-
-  .selected {
-    background-color: #392f2c!important;
-    color: #f9f8f4!important;
-  }
-
-  #deliverySelectionList {
-    display: none;  
-  }
-</style>
-
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
@@ -40,42 +21,6 @@
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-              <li style="padding: 1rem;
-              border-top: 0.1px solid #b1a9a9;
-              padding: 1.1rem 3rem;
-              text-decoration: none;
-              font-size: 1.8rem;
-              /* border-bottom: 1px solid #ada1a1; */
-              display: flex;
-              line-height: calc(1 + 0.3 / var(--font-body-scale));
-              color: rgb(var(--color-foreground));
-              flex-direction: column;
-              ">
-                <div class="deliverySelectorSection" id="deliverySelectorSection">
-                  <div style="font-size: 10px;
-                  margin-right: 10px;">Shopping for</div>
-                  <div id="mobileSelector"></div>
-                </div>
-                <div id="deliverySelectionList"></div>
-              </li>
-              <li style="padding: 1rem;
-              border-top: 0.1px solid #b1a9a9;
-              padding: 1.1rem 3rem;
-              text-decoration: none;
-              font-size: 1.8rem;
-              border-bottom: 0.1px solid #ada1a1;
-              display: flex;
-              line-height: calc(1 + 0.3 / var(--font-body-scale));
-              color: rgb(var(--color-foreground));
-              flex-direction: column;
-              margin-bottom: 1rem;
-              ">
-                <div class="pincodeSelectorSection" id="pincodeSelectorSection">
-                  <div style="font-size: 10px;
-                  margin-right: 10px;">At Pincode</div>
-                  <div id="pincodeSelector">122001</div>
-                </div>
-              </li>
               {%- for link in section.settings.menu.links -%}
                 <li>
                   {%- if link.links != blank -%}
@@ -361,124 +306,6 @@
           </div>
         </div>
       </div>
-      {% comment %} <div class="deliveryDateSelectorContainer" id="deliveryDateSelectorContainer"></div> {% endcomment %}
     </div>
   </details>
 </header-drawer>
-
-
-<script>
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const dateSelector = document.getElementById("mobileSelector");
-    const dateList = document.getElementById("deliverySelectionList")
-    const deliverySelectorSection = document.getElementById("deliverySelectorSection")
-
-    const today = new Date();
-    const tomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
-    const dayAfterTomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 2);
-    const twoDaysAfterTomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 3);
-
-    const formatDate = (date) => {
-      const options = { month: 'short', day: 'numeric' };
-      return date.toLocaleDateString('en-US', options);
-    };
-
-    // Formatted dates 
-    const tomorrowFormatted = formatDate(tomorrow);
-    const dayAfterTomorrowFormatted = formatDate(dayAfterTomorrow);
-    const twoDaysAfterTomorrowFormatted = formatDate(twoDaysAfterTomorrow);
-
-    // Array containing weekdays
-    const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-    // Get weekdays for each date
-    const tomorrowWeekday = weekdays[tomorrow.getDay()];
-    const dayAfterTomorrowWeekday = weekdays[dayAfterTomorrow.getDay()];
-    const twoDaysAfterTomorrowWeekday = weekdays[twoDaysAfterTomorrow.getDay()];
-
-    const mobileTooltipHTML = `
-          <div class="delivery-container">
-            <span class="delivery-label">Select a delivery day</span>
-            <ul class="delivery-options">
-              <li class="delivery-option" data-delivery-date="${tomorrow}"">Tomorrow (${tomorrowFormatted})</li>
-              <li class="delivery-option" data-delivery-date="${dayAfterTomorrow}">${dayAfterTomorrowWeekday} (${dayAfterTomorrowFormatted})</li>
-              <li class="delivery-option" data-delivery-date="${twoDaysAfterTomorrow}">${twoDaysAfterTomorrowWeekday} (${twoDaysAfterTomorrowFormatted})</li>
-            </ul>
-          </div>
-    `;
-
-    const a = document.createElement('div');
-    a.innerHTML = mobileTooltipHTML;
-    dateList.appendChild(a);
-
-    const storedDeliveryDate = localStorage.getItem('delivery-date');
-
-    if (storedDeliveryDate && storedDeliveryDate < new Date().toISOString()) {
-        const deliveryOptions = dateList.querySelectorAll('.delivery-option');
-        deliveryOptions.forEach(option => {
-          if (option.dataset.deliveryDate === storedDeliveryDate) {
-            setSelected(option, storedDeliveryDate);
-          }
-        });
-    } else {
-        const firstOption = dateList.querySelector('.delivery-option') //tooltipEl.querySelector('.delivery-option');
-        if (tomorrow) {
-          localStorage.setItem('delivery-date', tomorrow);
-          setSelected(firstOption, tomorrow);
-        }
-    }
-
-    const deliveryOptions = dateList.querySelectorAll('.delivery-option').forEach(option => {
-        option.addEventListener('click', handleDeliveryClick.bind(this));
-    });
-
-    dateSelector.addEventListener("click", function() {
-      dateList.classList.toggle("show");
-      deliverySelectorSection.classList.add("hide");
-    });
-
-    function setSelected(element, selectedDate) {
-      dateList.querySelectorAll('.delivery-option').forEach(option => {
-        option.classList.remove('selected');
-      });
-      element.classList.add('selected');
-      const dateSelector = document.getElementById("mobileSelector");
-
-      if (selectedDate == tomorrow) {
-        dateSelector.innerHTML = "Tomorrow";
-      } else {
-        dateSelector.innerHTML = new Date(selectedDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      }
-    }
-
-    function handleDeliveryClick(event) {
-      event.stopPropagation();
-      const clickedElement = event.target;
-      if (clickedElement.classList.contains('delivery-option')) {
-        const selectedDeliveryDate = clickedElement.dataset.deliveryDate;
-        localStorage.setItem('delivery-date', selectedDeliveryDate);
-        setSelected(clickedElement, selectedDeliveryDate);
-        dateList.classList.remove("show");
-        deliverySelectorSection.classList.remove("hide");
-      }
-    }
-  });
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const pincodeSelector = document.getElementById("pincodeSelector");
-
-    pincodeSelector.addEventListener("click", function() {
-      document.getElementById('modal-overlay').style.display = 'flex';
-    });
-
-    document.getElementById('close-btn').addEventListener('click', function() {
-        document.getElementById('modal-overlay').style.display = 'none';
-    });
-
-    const storedDeliveryDate = localStorage.getItem('delivery-pincode');
-  
-    pincodeSelector.innerHTML = storedDeliveryDate || 'Select Pincode'
-
-  });
-</script>

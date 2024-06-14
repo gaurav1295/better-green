@@ -6,8 +6,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Eat Better, Live Better",
+            "heading_size": "h1"
           }
         },
         "button": {
@@ -28,6 +28,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/BetterGreens_HeroImage4.png",
+        "show_side_margin": false,
         "image_overlay_opacity": 40,
         "image_height": "medium",
         "desktop_content_position": "bottom-center",
@@ -43,24 +44,6 @@
     "collection_list_8p6C7W": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_MPD46C": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bakery"
-          }
-        },
-        "featured_collection_xwhN9K": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "boxes"
-          }
-        },
-        "featured_collection_qnFpyW": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "drinks"
-          }
-        },
         "featured_collection_8kjt4D": {
           "type": "featured_collection",
           "settings": {
@@ -73,30 +56,48 @@
             "collection": "vegetables"
           }
         },
+        "featured_collection_qnFpyW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "drinks"
+          }
+        },
+        "featured_collection_MPD46C": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bakery"
+          }
+        },
         "featured_collection_9meCGc": {
           "type": "featured_collection",
           "settings": {
             "collection": "boxes"
           }
+        },
+        "featured_collection_mYVfBL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pantry"
+          }
         }
       },
       "block_order": [
-        "featured_collection_MPD46C",
-        "featured_collection_xwhN9K",
-        "featured_collection_qnFpyW",
         "featured_collection_8kjt4D",
         "featured_collection_NamCBz",
-        "featured_collection_9meCGc"
+        "featured_collection_qnFpyW",
+        "featured_collection_MPD46C",
+        "featured_collection_9meCGc",
+        "featured_collection_mYVfBL"
       ],
       "settings": {
-        "title": "From farm to you in a New York minute.",
+        "title": "The farm at your doorstep",
         "heading_size": "h1",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -114,7 +115,7 @@
         "text_Bx3QPf": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>1.<\/strong> Shop on your schedule. Subscribe to your favorite staples or place an à la carte order.<\/p><p><\/p><p><strong>2. <\/strong>Our farmers harvest your food. By ordering only what we need, we keep our waste under 1%!<\/p><p><\/p><p><strong>3. <\/strong>On the day of your delivery, we pack up your box and bring it to your door.<\/p>",
+            "text": "<ul><li>Shop at your convenience. Subscribe to your favourite essentials or place an à la carte order.<\/li><\/ul><p><\/p><ul><li>Our farmers and partners harvest and prepare just what you need, keeping our waste below 1%!<\/li><\/ul><p><\/p><ul><li>On delivery day, we carefully pack your box and bring it right to your doorstep.<\/li><\/ul>",
             "text_style": "body"
           }
         },
@@ -133,7 +134,7 @@
         "button_yVdhYm"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/84f30a7e86a8167b1a23f874b44134fb2883c239-1705x1137.webp",
+        "image": "shopify:\/\/shop_images\/colorful-fresh-vegetables-flatlay.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -142,7 +143,7 @@
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-4",
         "color_scheme": "scheme-4",
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "padding_top": 80,
         "padding_bottom": 80,
@@ -156,9 +157,9 @@
         "column_NL4H3z": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3d73f1c5b622b0a8d2c08f09175057f4ed47521e-1000x1000.gif",
+            "image": "shopify:\/\/shop_images\/Fresh_Harvest_cd501e5e-e8aa-4797-a052-896d577d3934.png",
             "title": "Grown Today, Delivered Tomorrow",
-            "text": "<p>We are the fastest solution from farm to table. Our rotating selection of seasonal p is chock-full of precious nutrients that won’t be depleted by weeks of travel and storage.<\/p>",
+            "text": "<p>We minimize transit times and strive to be the fastest farm-to-table solution making our rotating selection of seasonal produce reaches you at their peak of nutrition and flavor<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -166,9 +167,9 @@
         "column_YH8mat": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/9cbec0b45904b3f818fa49378dfaa12d35e804ca-800x800.gif",
+            "image": "shopify:\/\/shop_images\/Large_Range_d1f22646-8de6-4004-beaa-ccf1a3eaa716.png",
             "title": "Not Your Average Grocery Delivery",
-            "text": "<p>Shop our full range (800+) of sustainable groceries sourced with care and expertise. Cutting out the middleman gives you a better value while the farmers and makers earn more, too.<\/p>",
+            "text": "<p>Discover our vast range sustainable groceries, thoughtfully sourced with care and expertise. By eliminating the middleman, we provide you with better value while ensuring farmers and makers receive a fairer share.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -176,9 +177,9 @@
         "column_EUkdzU": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/949e8c65317892ba203e791db5f56a79295dd8f1-4329x4329.webp",
-            "title": "Your Favorites on Autopilot",
-            "text": "<p>Enjoy set-and-forget convenience. Subscribe to seasonal farm boxes and weekly grocery staples on your schedule.<\/p>",
+            "image": "shopify:\/\/shop_images\/Sustainable_7a47787d-a58b-4c56-9903-d355c6a9cdfb.png",
+            "title": "Focused on Sustainability",
+            "text": "<p>We club deliveries, promote thoughtful ordering, manage inventory precisely, and upcycle produce. Our use of electric vehicles further reduces emissions, ensuring fresher, more sustainable groceries for you.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -212,14 +213,14 @@
         "heading_xGyJKW": {
           "type": "heading",
           "settings": {
-            "heading": "Our Name is Our Mission",
+            "heading": "Its in our name",
             "heading_size": "h1"
           }
         },
         "text_qfWRYc": {
           "type": "text",
           "settings": {
-            "text": "<p>Farm to People is on a mission to radically transform the food system and the way people get food to their table. We believe everyone should have access to the freshest, high-quality produce, seafood, meats, and more direct from growers and producers they can trust — because they know them. We’re working to make that easy and affordable.<\/p>",
+            "text": "<p>At BetterGreens, we are committed to revolutionizing the food system in India by ensuring that everyone can easily and affordably access fresh, high-quality produce, groceries and more directly from trusted growers and producers. Our mission is to transform the way food reaches your table, advocating for transparency and fostering strong relationships between consumers and suppliers. By prioritizing sustainability and ethical sourcing practices, we aim to create a healthier and more resilient food supply chain that benefits both people and the planet.<\/p>",
             "text_style": "body"
           }
         },
@@ -238,15 +239,15 @@
         "button_GL96QL"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/84f30a7e86a8167b1a23f874b44134fb2883c239-1705x1137.webp",
+        "image": "shopify:\/\/shop_images\/BetterGreens_HeroImage4.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-3",
+        "section_color_scheme": "scheme-868f4a5e-8303-45ee-99eb-0af047e3fbb3",
+        "color_scheme": "scheme-868f4a5e-8303-45ee-99eb-0af047e3fbb3",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 80,
@@ -294,6 +295,7 @@
         "column_iayB9R",
         "column_tBPgCQ"
       ],
+      "disabled": true,
       "settings": {
         "title": "From the people",
         "heading_size": "h1",

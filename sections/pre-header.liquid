@@ -749,7 +749,7 @@
 
                     $.ajax({
                       type: "POST",
-                      url: "https://6109-2401-4900-1c75-5403-d95f-d3a4-edb8-f751.ngrok-free.app/api/pincode", // Replace with your actual endpoint URL
+                      url: "https://b0ae-2401-4900-1c8a-a090-5949-6a8d-e8f7-3bf9.ngrok-free.app/api/pincode", // Replace with your actual endpoint URL
                       data: JSON.stringify({ pincode: zipCode }), // Stringify the data object
                       contentType: 'application/json', // Set the Content-Type header
                       dataType: 'json', // Expected response format (optional)
@@ -762,13 +762,11 @@
                           // Save delivery pincode to local storage on success
                           localStorage.setItem('delivery-pincode', zipCode);
                           document.getElementById('modal-overlay').style.display = 'none';
-                          selectedPincodeEl.innerHTML = zipCode;
-                          pincodeSelector.innerHTML = zipCode;
+                          deliveryDate.innerHTML = zipCode;
                         } else {
                           errorMessage.classList.remove('hidden');
                           modalContent.classList.add('hidden');
                           selectedPincodeEl.innerHTML = 'Pincode'
-                          pincodeSelector.innerHTML = 'Select Pincode'
                           localStorage.removeItem('delivery-pincode');
                           // Update modal content to indicate delivery unavailability
                           // const modalContent = document.querySelector('.modal-content');
